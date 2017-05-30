@@ -1,0 +1,992 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 355b4d996bde96bf3da877532382c8ae63c84dc0)
++++ .idea/workspace.xml	(revision )
+@@ -2,10 +2,22 @@
+ <project version="4">
+   <component name="ChangeListManager">
+     <list default="true" id="8a8cd2a5-1910-47ad-8127-48c91ef1f59e" name="Default" comment="">
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/controller/Home.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/controller/Login.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/controller/Logout.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/controller/Perfil.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/Amizade.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/AvaliacaoAmigos.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/AvaliacaoHospedeiroxhospede.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/AvaliacaoHospedexhospedeiro.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/AvaliacaoOrganizadorxparticipante.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/AvaliacaoParticipantexorganizador.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/Endereco.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/EventoEsportivo.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/Fotos.class" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/Hospedagem.class" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/model/Usuario.java" afterPath="$PROJECT_DIR$/src/br/com/uff/model/Usuario.java" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/trabalho-dw.iml" afterPath="$PROJECT_DIR$/trabalho-dw.iml" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+     </list>
+     <ignored path="financas.iws" />
+     <ignored path=".idea/workspace.xml" />
+@@ -49,16 +61,84 @@
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file leaf-file-name="org.eclipse.jdt.core.prefs" pinned="false" current-in-tab="true">
++      <file leaf-file-name="org.eclipse.jdt.core.prefs" pinned="false" current-in-tab="false">
+         <entry file="file://$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs">
+           <provider selected="true" editor-type-id="text-editor">
+             <state relative-caret-position="187">
+-              <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
++              <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
++      <file leaf-file-name="persistence.xml" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="374">
++              <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
++              <folding />
++            </state>
++          </provider>
++        </entry>
++      </file>
++      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/web/index.jsp">
++          <provider selected="true" editor-type-id="text-editor">
++            <state relative-caret-position="0">
++              <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
++              <folding>
++                <element signature="n#style#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#2;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#2;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#3;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#1;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#1;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#2;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#0;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#0;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#1;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#2;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#2;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#3;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#b#3;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#span#4;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++                <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#7;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++              </folding>
++            </state>
++          </provider>
++        </entry>
++      </file>
+     </leaf>
+   </component>
+   <component name="FileTemplateManagerImpl">
+@@ -71,13 +151,6 @@
+   </component>
+   <component name="FindInProjectRecents">
+     <findStrings>
+-      <find>AVIAO2</find>
+-      <find>voo1Ida</find>
+-      <find>poltr</find>
+-      <find>poltrona</find>
+-      <find>poltrona1</find>
+-      <find>voo1ida</find>
+-      <find>número</find>
+       <find>sem</find>
+       <find>isEm</find>
+       <find>designForm</find>
+@@ -101,6 +174,13 @@
+       <find>img</find>
+       <find>perfil</find>
+       <find>avaliacaoParticipante</find>
++      <find>a</find>
++      <find>alf</find>
++      <find>alfra</find>
++      <find>alfrad</find>
++      <find>alfradi</find>
++      <find>alfradiq</find>
++      <find>alfradique</find>
+     </findStrings>
+     <replaceStrings>
+       <replace>manager</replace>
+@@ -138,6 +218,9 @@
+       <dir>C:\Users\leo_c\Documents\Faculdade\S.I\8 - Des. Web\Trabalho\trabalho-dw</dir>
+     </dirStrings>
+   </component>
++  <component name="Git.Rebase.Settings">
++    <option name="ONTO" value="refs/heads/master" />
++  </component>
+   <component name="Git.Settings">
+     <option name="ROOT_SYNC" value="DONT_SYNC" />
+     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+@@ -145,6 +228,11 @@
+       <push-target-info target-remote="TrabalhoDW" target-branch="master" repo="$PROJECT_DIR$" source="master" />
+     </push-targets>
+   </component>
++  <component name="GithubProjectSettings">
++    <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
++    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_USER" value="lcantelmo" />
++    <option name="CREATE_PULL_REQUEST_DEFAULT_REPO_NAME" value="dw_trabalho" />
++  </component>
+   <component name="GradleLocalSettings">
+     <option name="externalProjectsViewState">
+       <projects_view />
+@@ -202,11 +290,11 @@
+         <option value="$PROJECT_DIR$/src/br/com/uff/controller/Login.java" />
+         <option value="$PROJECT_DIR$/web/perfilAmigo.jsp" />
+         <option value="$PROJECT_DIR$/web/perfilLogado.jsp" />
+-        <option value="$PROJECT_DIR$/web/index.jsp" />
+         <option value="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" />
+         <option value="$PROJECT_DIR$/src/br/com/uff/controller/Home.java" />
+         <option value="$PROJECT_DIR$/trabalho-dw.iml" />
+         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
++        <option value="$PROJECT_DIR$/web/index.jsp" />
+       </list>
+     </option>
+   </component>
+@@ -229,7 +317,7 @@
+   <component name="ProjectFrameBounds">
+     <option name="x" value="-8" />
+     <option name="y" value="-8" />
+-    <option name="width" value="1370" />
++    <option name="width" value="1382" />
+     <option name="height" value="744" />
+   </component>
+   <component name="ProjectInspectionProfilesVisibleTreeState">
+@@ -278,8 +366,8 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="trabalho-dw" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="External Libraries" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+             </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+@@ -291,10 +379,6 @@
+               <option name="myItemId" value="trabalho-dw" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="web" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -306,7 +390,7 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value=".idea" />
++              <option name="myItemId" value="web" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
+@@ -320,11 +404,11 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value=".idea" />
++              <option name="myItemId" value="web" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="libraries" />
++              <option name="myItemId" value="fotos" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
+@@ -338,65 +422,7 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value=".idea" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="inspectionProfiles" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-          </PATH>
+-          <PATH>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="trabalho-dw" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="trabalho-dw" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value=".idea" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="dataSources" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-          </PATH>
+-          <PATH>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="trabalho-dw" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="trabalho-dw" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value=".idea" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="copyright" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-          </PATH>
+-          <PATH>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="trabalho-dw" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="trabalho-dw" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value=".idea" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="artifacts" />
++              <option name="myItemId" value="src" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
+@@ -415,7 +441,7 @@
+     <property name="project.structure.side.proportion" value="0.2" />
+     <property name="js.eslint.eslintPackage" value="" />
+     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
+-    <property name="settings.editor.selected.configurable" value="vcs.Git" />
++    <property name="settings.editor.selected.configurable" value="settings.github" />
+     <property name="com.intellij.ide.scratch.LRUPopupBuilder$2/Languages" value="MySQL" />
+   </component>
+   <component name="RecentsManager">
+@@ -1059,7 +1085,7 @@
+       <workItem from="1495613542032" duration="2105000" />
+       <workItem from="1495748546325" duration="1463000" />
+       <workItem from="1496014709550" duration="1215000" />
+-      <workItem from="1496181459371" duration="678000" />
++      <workItem from="1496181459371" duration="5523000" />
+     </task>
+     <task id="LOCAL-00001" summary="Meu Carrinho OK">
+       <created>1481472822955</created>
+@@ -1082,11 +1108,18 @@
+       <option name="project" value="LOCAL" />
+       <updated>1496015684796</updated>
+     </task>
+-    <option name="localTasksCounter" value="4" />
++    <task id="LOCAL-00004" summary="Nova Versão">
++      <created>1496182179519</created>
++      <option name="number" value="00004" />
++      <option name="presentableId" value="LOCAL-00004" />
++      <option name="project" value="LOCAL" />
++      <updated>1496182179519</updated>
++    </task>
++    <option name="localTasksCounter" value="5" />
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="510630000" />
++    <option name="totallyTimeSpent" value="515475000" />
+   </component>
+   <component name="TodoView">
+     <todo-panel id="selected-file">
+@@ -1098,11 +1131,11 @@
+     </todo-panel>
+   </component>
+   <component name="ToolWindowManager">
+-    <frame x="-8" y="-8" width="1370" height="744" extended-state="0" />
++    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+     <layout>
+       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3154574" sideWeight="0.50292826" order="9" side_tool="true" content_ui="tabs" />
+       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+@@ -1120,10 +1153,10 @@
+       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3280757" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3154574" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3154574" sideWeight="0.49707174" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32123798" sideWeight="0.5532359" order="7" side_tool="true" content_ui="tabs" />
+-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24963072" sideWeight="0.44676408" order="0" side_tool="false" content_ui="combo" x="951" y="125" width="364" height="434" />
++      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24743778" sideWeight="0.44676408" order="0" side_tool="false" content_ui="combo" x="951" y="125" width="364" height="434" />
+       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3267974" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+@@ -1189,6 +1222,8 @@
+     <MESSAGE value="Meu Carrinho OK" />
+     <MESSAGE value="Nova Versão" />
+     <option name="LAST_COMMIT_MESSAGE" value="Nova Versão" />
++    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
++    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+   </component>
+   <component name="XDebuggerManager">
+     <breakpoint-manager>
+@@ -1201,12 +1236,6 @@
+     <option name="FILTER_TARGETS" value="false" />
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/Passagem.java" />
+-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/TipoVoo.java" />
+-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/Voo.java" />
+-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/Aeroporto.java" />
+-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/AdicionarPassageiros.java" />
+-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/AdicionarPoltrona.java" />
+     <entry file="file://$PROJECT_DIR$/src/br/com/uff/util/PopularBanco.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="1887">
+@@ -1306,6 +1335,10 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="277">
+           <caret line="22" column="5" lean-forward="false" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
++          <folding>
++            <element signature="e#351#352#0" expanded="false" />
++            <element signature="e#376#377#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -1369,6 +1402,29 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="85">
+           <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
++          <folding>
++            <element signature="imports" expanded="false" />
++            <element signature="e#478#479#0" expanded="false" />
++            <element signature="e#503#504#0" expanded="false" />
++            <element signature="e#540#541#0" expanded="false" />
++            <element signature="e#568#569#0" expanded="false" />
++            <element signature="e#606#607#0" expanded="false" />
++            <element signature="e#639#640#0" expanded="false" />
++            <element signature="e#692#693#0" expanded="false" />
++            <element signature="e#736#737#0" expanded="false" />
++            <element signature="e#771#772#0" expanded="false" />
++            <element signature="e#801#802#0" expanded="false" />
++            <element signature="e#848#849#0" expanded="false" />
++            <element signature="e#886#887#0" expanded="false" />
++            <element signature="e#922#923#0" expanded="false" />
++            <element signature="e#956#957#0" expanded="false" />
++            <element signature="e#1008#1009#0" expanded="false" />
++            <element signature="e#1054#1055#0" expanded="false" />
++            <element signature="e#1088#1089#0" expanded="false" />
++            <element signature="e#1120#1121#0" expanded="false" />
++            <element signature="e#1168#1169#0" expanded="false" />
++            <element signature="e#1210#1211#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -1376,6 +1432,57 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="221">
+           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
++          <folding>
++            <element signature="imports" expanded="false" />
++            <element signature="e#701#702#0" expanded="false" />
++            <element signature="e#726#727#0" expanded="false" />
++            <element signature="e#763#764#0" expanded="false" />
++            <element signature="e#791#792#0" expanded="false" />
++            <element signature="e#823#824#0" expanded="false" />
++            <element signature="e#851#852#0" expanded="false" />
++            <element signature="e#893#894#0" expanded="false" />
++            <element signature="e#927#928#0" expanded="false" />
++            <element signature="e#959#960#0" expanded="false" />
++            <element signature="e#987#988#0" expanded="false" />
++            <element signature="e#1029#1030#0" expanded="false" />
++            <element signature="e#1063#1064#0" expanded="false" />
++            <element signature="e#1094#1095#0" expanded="false" />
++            <element signature="e#1121#1122#0" expanded="false" />
++            <element signature="e#1161#1162#0" expanded="false" />
++            <element signature="e#1193#1194#0" expanded="false" />
++            <element signature="e#1230#1231#0" expanded="false" />
++            <element signature="e#1261#1262#0" expanded="false" />
++            <element signature="e#1311#1312#0" expanded="false" />
++            <element signature="e#1351#1352#0" expanded="false" />
++            <element signature="e#1384#1385#0" expanded="false" />
++            <element signature="e#1413#1414#0" expanded="false" />
++            <element signature="e#1457#1458#0" expanded="false" />
++            <element signature="e#1493#1494#0" expanded="false" />
++            <element signature="e#1531#1532#0" expanded="false" />
++            <element signature="e#1565#1566#0" expanded="false" />
++            <element signature="e#1619#1620#0" expanded="false" />
++            <element signature="e#1665#1666#0" expanded="false" />
++            <element signature="e#1705#1706#0" expanded="false" />
++            <element signature="e#1743#1744#0" expanded="false" />
++            <element signature="e#1803#1804#0" expanded="false" />
++            <element signature="e#1857#1858#0" expanded="false" />
++            <element signature="e#1895#1896#0" expanded="false" />
++            <element signature="e#1929#1930#0" expanded="false" />
++            <element signature="e#1983#1984#0" expanded="false" />
++            <element signature="e#2029#2030#0" expanded="false" />
++            <element signature="e#2067#2068#0" expanded="false" />
++            <element signature="e#2101#2102#0" expanded="false" />
++            <element signature="e#2155#2156#0" expanded="false" />
++            <element signature="e#2201#2202#0" expanded="false" />
++            <element signature="e#2238#2239#0" expanded="false" />
++            <element signature="e#2271#2272#0" expanded="false" />
++            <element signature="e#2324#2325#0" expanded="false" />
++            <element signature="e#2368#2369#0" expanded="false" />
++            <element signature="e#2408#2409#0" expanded="false" />
++            <element signature="e#2443#2444#0" expanded="false" />
++            <element signature="e#2500#2501#0" expanded="false" />
++            <element signature="e#2548#2549#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -1383,13 +1490,32 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="85">
+           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="289">
+-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
++          <folding>
++            <element signature="e#422#423#0" expanded="false" />
++            <element signature="e#447#448#0" expanded="false" />
++            <element signature="e#480#481#0" expanded="false" />
++            <element signature="e#508#509#0" expanded="false" />
++            <element signature="e#545#546#0" expanded="false" />
++            <element signature="e#577#578#0" expanded="false" />
++            <element signature="e#628#629#0" expanded="false" />
++            <element signature="e#670#671#0" expanded="false" />
++            <element signature="e#706#707#0" expanded="false" />
++            <element signature="e#737#738#0" expanded="false" />
++            <element signature="e#786#787#0" expanded="false" />
++            <element signature="e#826#827#0" expanded="false" />
++            <element signature="e#858#859#0" expanded="false" />
++            <element signature="e#885#886#0" expanded="false" />
++            <element signature="e#926#927#0" expanded="false" />
++            <element signature="e#958#959#0" expanded="false" />
++            <element signature="e#994#995#0" expanded="false" />
++            <element signature="e#1026#1027#0" expanded="false" />
++            <element signature="e#1076#1077#0" expanded="false" />
++            <element signature="e#1118#1119#0" expanded="false" />
++            <element signature="e#1154#1155#0" expanded="false" />
++            <element signature="e#1185#1186#0" expanded="false" />
++            <element signature="e#1234#1235#0" expanded="false" />
++            <element signature="e#1274#1275#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+@@ -1397,6 +1523,7 @@
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="374">
+           <caret line="22" column="34" lean-forward="false" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="34" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+@@ -1553,14 +1680,6 @@
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-170">
+-          <caret line="17" column="59" lean-forward="false" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="59" />
+-          <folding />
+-        </state>
+-      </provider>
+-    </entry>
+     <entry file="file://$PROJECT_DIR$/bin/br/com/uff/service/Dao.class">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="0">
+@@ -1588,8 +1707,102 @@
+     <entry file="file://$PROJECT_DIR$/.settings/org.eclipse.jdt.core.prefs">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="187">
+-          <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
++          <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+           <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/web/fotos/1perfil.png">
++      <provider selected="true" editor-type-id="images">
++        <state />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/web/fotos/2perfil.png">
++      <provider selected="true" editor-type-id="images">
++        <state />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/web/fotos/3perfil.png">
++      <provider selected="true" editor-type-id="images">
++        <state />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/web/fotos/4perfil.png">
++      <provider selected="true" editor-type-id="images">
++        <state />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/web/fotos/time4.PNG">
++      <provider selected="true" editor-type-id="images">
++        <state />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/web/fotos/5perfil.png">
++      <provider selected="true" editor-type-id="images">
++        <state />
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="374">
++          <caret line="22" column="45" lean-forward="true" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
++          <folding />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/web/index.jsp">
++      <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="0">
++          <caret line="0" column="9" lean-forward="false" selection-start-line="0" selection-start-column="9" selection-end-line="0" selection-end-column="9" />
++          <folding>
++            <element signature="n#style#0;n#div#0;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#a#0;n#div#1;n#div#0;n#div#1;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#h1#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#0;n#span#0;n#p#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#1;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#2;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#2;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#3;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#0;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#1;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#1;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#2;n#p#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#0;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#0;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#1;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#1;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#2;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#2;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#3;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#b#3;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#span#4;n#p#0;n#div#3;n#div#0;n#div#0;n#div#0;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#2;n#div#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#1;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#2;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#3;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#div#5;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#7;n#div#0;n#div#1;n#div#2;n#body#0;n#body#0;n#html#0;n#!!top" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+Index: src/br/com/uff/model/Usuario.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/br/com/uff/model/Usuario.java	(revision 355b4d996bde96bf3da877532382c8ae63c84dc0)
++++ src/br/com/uff/model/Usuario.java	(revision )
+diff --git bin/br/com/uff/model/Endereco.class bin/br/com/uff/model/Endereco.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..c5da64b49ef81bebdb602ea2450c3f18804604f3
+GIT binary patch
+literal 2042
+zc$|HdSyK~15XXB%4icjvkVq0w@Ccx+f`S5u%Rt3S1q)KKe4K2CIJlWj?Lo=6(kd;h
+zeDDMKp)9*M8^F!Pm!6*g^zobC<M*GRzW`tvc2banmq|#%D>7?j*2!#;c}=E7W-|d>
+z3E0*kB3c?uR!`U|(@iGZdPTat&Fys!a)+LDMTa+pBbp}PmeO*WD=g_~ko7Y@>s@X;
+z!g0AYxL#>t(v0F@pG$5tm$w?s^f(5MIxg+oXa9}IPW7{{A76P>uGK5`4;qXZyo=WM
+zm<AJ<u#a3@$Tr3n0_uu9RdCN#4XdL&p471!Gd}48uWL(Y>NU?a8HQttc#{d+w$L#|
+zi?uj99HU#PM7vC2nfQi~!Yv_4ajt>tu0>H}RUvuJ>omDtr&2^{8O&@jThKlbqwYtl
+zQK&X;ooKw{W4(g~OuZ~y+~$Ub46!zMEBI(K#X04}i8;OVY*BGcOmQr*OS6hQeFv38
+zn%mSrHP0tUf&O`>ICxAYlUQIU7){c-<Ws9)Qly{zsF#Dmk>2+csK4{)m~i@D>d5kJ
+zgYOBN(AEAR7KuZHyy7J(<5PCe*3)nkZl&Q0q|-1-W(qQCm?o1WlP6Pv48G1o$F0Hm
+z#eEN&C){x19)2V#{G<{Pq2hp0xVw(KYq*Z#ew^cW0tIY~QiM9AoJBv5>kVI<R%khe
+zmRD$n0gc+?b<y6&osO%9Yi#}pXkY!5J3%lY^If#*UI5-^23HMc;r>AKH;8-*CC@68
+zAHc&PxrEUXik@Hi4v~x2DPMhrIYqxhwigvtAg?z{4P#UwBVmwvB}h>XG7<(^#2kGH
+z$YcOAhdl;CqG6CFCCCCiR)IvrAS;-&Is~Nm)@blV2@(r~tSLbj)gZAjNC|T`hk#56
+zAi5GH9tPP_f;?4&#KRzan6p0wBo}}@Q-UPIAa9i*OKOlr7^H?d2SY&e0m!lvWHbzN
+hs04Yg1{n>5G%)A=5Rl%VAObJ^oE869L_Jpl{sP0)EE@m-
+
+diff --git bin/br/com/uff/model/Hospedagem.class bin/br/com/uff/model/Hospedagem.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..ea8bfbe83849be40c5684561c719cd844da3e3f2
+GIT binary patch
+literal 1872
+zc$|Hd>rN9v6vzKldV#Xsp>ipTh}r_OUQj`hNGwQ`1`=JH_;K3~Wyp57*$a`k(nMq8
+z2Oq$PGM?$KP?u>#IJ0NY?KkJl^!J~izW_YLUKWFRF@y|WO0gxywiK_V*vViwgVziR
+z(O{UWoSPS>ZkcvdFWWwEa(9Pe?tNhUqQ$Gi6E%zP+qUDIzHn@hA=iocthc%A3D4(t
+zo$KWW1uZKK@3_rf)8~z<X$72|20dTu&C9<2RLQt(cl^txgJYv?d}7F+IbNGLxNseY
+z`AW^z>rP7#PEYlg)8Ll=(F;shI24puWInOE;gBG6CQ8IG+%SE!Y>T=uEr#*17lAJ<
+zy+n{bG8w$pc3jgUbLv7Ki(#pcTXc|QY2P?t7?Kqag)Qr)cZDtdJ%)iou}U6q9mzCS
+z5jH;#S~cz(CN-a7vf|WDt4fEHdbFAJ&jd|l@n#>6I;S(6yd?>n+%MCdX9`8-q*GpK
+z&lMDANi{+Vj=CD3r$l{PKjQuGzF6q(Ez@VO)05(LDWha5b&qHA-x0b8H0s5?rV4Q<
+zSw@SJMV;5Y|J3XUCvfZhP{_uPUH5N8W|DX9=5!C}efXC<8uD1wFodjz2~293mSP4u
+z4GYLIEcBTUUAXI(pVZEI-N#*epo8>?Q%K09pest+1Zf(rBczXVjA5KMs9a=D(>g_K
+zLRP=AM=;Tz48KMHvmA4nC(}YN(=dI~!ARcj{Gu@WBdFCMU|%~)?~u&W3d|x&Axre7
+zg-&#aWm*~TVI@kSUnTg4#FwiC>CR?e8GIiPqToI9mW9%*Yu}NGmtX3{$PBsAE6O0h
+z!Ui%tL_q;E5C>UNf)uf;0vU*d6ey<H10)<3!<rH#83$Qcf~>1Sl5vp76!WA9$aDnq
+z2pbBJR2*be38GU81xP9mvPCi5JwU=s$p};hl8%GyDnXvALDF%MHx#qq10;L`3A*Dl
+LX7lRpJO};)HeOBR
+
+diff --git bin/br/com/uff/model/AvaliacaoOrganizadorxparticipante.class bin/br/com/uff/model/AvaliacaoOrganizadorxparticipante.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..d509cabe7b73533ea1c758ea8993c0b13ce6ff5d
+GIT binary patch
+literal 2388
+zc$}4%YflqF6o${1UT9rKxyelhMJyLtFQ_1j6sS@|0Hu=naoY}cNZD<6w*>rEnrKY?
+z;1BRe8Q-&ATDqNjNs}`>Gv__$**Rw?{rT(r4<dR<uTzww)g&b;!)A@mI-3nPSvD`(
+zyh_k!f^r%~WJ#mGtwZzJG%BW5Hgc9H%EDRJX!vc-^5l`&m#!>SM8>jg&-A2ixf%`n
+ziW8$M99O!Yu!_RSl_0vQ*mxx@;h3H%?VFXFfK#{Y@w|NcM}K6>pH_YU+(vdgpUc13
+zC@zkL<=HGOI7ZPvGHM40#*tkT6(j3!W!<Xnc=FhWa7+<>#}auP2HQz&R-{?79gRlX
+z<GpihrXx8{_n9L!CE*qwSv2w7d+yx!JV#n(_(u7dAgR_06}UOA$Gc|R6=7QNi$9Z=
+z^j0+LN>A@YwvL<{^=wH?Y}bwo!pWOBbxvXz&B{JVcpfZ9y$=#)SZIgN_@uzwamuD8
+zKl0n1R85>nQC3Y97pY@q;pI^Gf%LSp@-er*KbTf*Gi(w8vOysx5#%3Ak#w7q+v&e6
+zIE{`pnP!Q`RGFGZ(%lyCYl<Xi&K&&0x!{<&=VzRFqgm(vmUC)UniHP$8c4T0aiRo*
+zZTmfuaL=AN`EH{@TI<kk5r%4dwN&HGi4&yu?3z;)FC}-z)L$E5o}+NXw|^U1eDL1s
+zvQF3OhE5kq*Qt;CbsD6rIt{TIrV*V+d1H*OY4qU#`%k0G&DYo|9Ezex6S$I6xWEz=
+z;jE<5Ma-^Xb_rt-=9dMgy;uNGupP%ZfHA^&ZEHh{HNg8L`27*D5QNA3!jAiQsD>X=
+zY~~wjpMAFp*c3)W&?ti3#FJikqFXeH5iLzqK>(u>;0r}QH3G!_#WAJ$4y6O}3cNW{
+zd}j75MZ)RFp_%X_4A#AZ2>et(HjSofMgh_l2ANcX%+j0+q$>=PhGx10NWDNB-KBX2
+zNHh#Grvx$Ro(d!y2Dt~#{SF}YuF$Zr0*Qq|7L*_l)F81i$RadL9YBTxkcY_84iXQ8
+zJX3-^qQ@$bco<|AnoI`}?tf1FMA@u~Fvx}yWKrF$i7?0}G`S8Sqd~JS(NhITcNk<#
+h39^inQh;=aL3W{e(*cBU0Q?D}=e}m8abLV3`VHGYuQ>n!
+
+diff --git bin/br/com/uff/model/Fotos.class bin/br/com/uff/model/Fotos.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..a64a7d92eb6efad69da18a5d30c6efa4814ba740
+GIT binary patch
+literal 1334
+zc$|GyU2hUW6g|V&w(DxY0BHqVYSo2mSL0(%6JuLLf^A}v#K#4uI1S7;yR%0Al_nY!
+zAN&FSDC3=lt`(MsWbWR%=bn4^%q+kE{QL#r1)iJ8VRsQ(JkiTjz3drq3_N2<i5|mR
+z^TPe)Is;esorYAr&;5Od^>?9EV#wPf5S;;kC8eiaB|I506r+yM&L#H)5hyOZ+-dZv
+zX*;3thD+|diuc;?AmjvE2$atIqZ{!wsWrNc@QuTxlUAekfx&nmgsv|<hK**&ce>ut
+z3D3`+q1WRBXHuh%N&@X$SB_fVsnm={Px!~4BAV4}?|!CyA^TL$y%bWY1BSF+YcphC
+z6FtLHQ%HUi4m;d$x#Wm$_PXw%O+$4)+03Yqf-EY{>eCYgqR;lZYLM>*yO!vDHW=57
+zc0ySTGKnBIqD(9|SYZa&uoZhgR1+KF6;h8lyfP{OpU~JQO&wzj_ADgQdgg_Gmmdr5
+zjTu?6r-AweXAkL!uACa}Tgane!N7urB`jN5#TxmM>?p(XzsaYa3*J?z(k0K)^-m+E
+zS-`MJ*$QPQ#aonH9Jg_YHi&;x&QV;Un9}1Y8kCa`T8q(_#OMcP>p#H0MzFiIniN44
+z8EP%jlQjlm9UBxG?x8#(aAJaQNPUS3a?xf!vAKf#ljZ|L>p{8t?suf7$CsiW%}^Yp
+zCJg#%{Q3-=*h&zRo)%J06jH@@l92SYkS*$|&Jpq;GMZrr4-<rBriJVz3VDRbNkTHy
+XLTu`(%@Lwcm;U+)qkC%c+1G);Lm&S2
+
+diff --git bin/br/com/uff/model/Amizade.class bin/br/com/uff/model/Amizade.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..34ab98f2444b5e70fef9c22df8bc969ac6ecbe2f
+GIT binary patch
+literal 1616
+zc$|Gz+iuf95IvhFPHaN2H1tj{P?8jCXt}qv3Q&-xsFfg%#G{jJ!&Zr1`BG87i3gBc
+zKs@jPd=z5VF==s}zRYBH&zw0ko>hMT`S}aLI<_^axUV9EHI2dt(ma&mBWWH>^CXR@
+zX*^>{hz7%0`OrKz^_FQhb;I&_lRFy>lW%>?6K!4<uBf$m$+B$E^n`7>47niVqkhC4
+zSGXRx>RdM(l(ZOg@rGO6F+JX>nk}CbDC2rEZk}9<r%IKRqX2Kb+S#obmG=y3-}OyL
+z*bGzUnxoh4w(cJs=xw{fTl#+IjxuIqX!k5$vB}W&V8~)v$AWY*C}y1t&;EZDFKoNT
+zO^fi#rm%#!#W0XBR2h;lsT{*lSy+76Z`Zg}F=;{!qh-5pwyH!e<M1%)eGqP}-cnn9
+zG8<A*s>wa05%3!nxt%DPH)J_RM;Zb4|Fu4oFI?8V=3c<g=KDh>`N%nOcN!yZ@0m)t
+zQaGe>svkEd)jh}L@-YxuP<v<lPMyCNayHp;1gjD&XVm-Ic4!H`lZ`AUFqwshD``-$
+ziTNy^V=IeMjAbz{O%B%?Ci+d8Vfb9oUhR<AJ?gY)@oC$H<prBc+jcDd-hph#D8#%H
+zEYM?8>D48XklH{kQ8Yr)Rq}%r4{;0!2P8DSR>)r?pOCtH&ZrIYD#g?>*{R@B(;ARZ
+z6~BXh4Pet`HS!?hB+<;!uWSc|S<I1VxPkeQU@aub6i<=(hJnvr4kb9xUC7UL^B1rf
+z=9dU9YpKQQA4r}d5fw2-Y108ot^*87<Sz|NLHV1w71HV5eom44645dj+siU;hsj%^
+z7NxjyhE!C@BIPVy5TbO2DB&ky$j1s%qC%Eqg%sk2C{ZCr%30|nWIPm7Bt)-}bX3S{
+htdKjn8z&?k6|zP->wSdCWut!qsvvXp?ke5`{sO<pB})JR
+
+diff --git bin/br/com/uff/controller/Logout.class bin/br/com/uff/controller/Logout.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..842d63c438b73cd0e2edcabe6dfeb97125e8e624
+GIT binary patch
+literal 1216
+zc$|$?U31bv6g>;Hp%87QD7N;CYAuwOsBL`^$8pBm(HW*X#p!z>3v4IN;$}hK{Y5@G
+z_}~xlM>*bvh#hL7dAPfKbM85J@4d;d-#>l=*vIn}l2}h;1Nk&I@i2);!C@<n$JjPd
+zFi>QeeJMPlUopfB#WRM)8|iR{`Ks{vN%x}8)hD~|k|$G@4ck4ll?cv}GojnUXIQJ&
+zmDP|JR=3%t)zeD4E>~7nwq#dVNW_sJrLP%I3)OSGXZJ0itDeiX)z-RWy(3c_I!^iL
+zF86h1D$MUl&*zmOXG0Bx7`AW7&X80Q1H<%`A}vz#x$g_<F>G8P6e0+ma)jTpb)(G{
+zLw*b&WpXrv1OadR4c^fd?HkxJP$E}Nc2$EPi=f)+VLi(MlZiQ`4D6cNL)n03;t5g=
+zbHa0YzkKd@OgzOi1N$ZpaLBMSsYBGk$tAb~i2S3385RS8C8YKK!zJ(5jru|NY;j%t
+zTieY-ae8&H&p2X939o0n!m%}#F54Q39bM|m;js6XYkMuLrj_tom2vI=b!vSIgeIja
+z)fZbi46n!MYx1OD9dP7f(1#p6F|eTTWYcuAXl1m{?0g6N7QQyg&W6r3Zjm*I0Nlnr
+ztqCmP4xxhJuZWW$$d?9)F`VoT5N9Z55(CV{@FKC4DD4g~8^=H5dttx=Ws@QDMdXmB
+x-^pqybTA}~go0g$5G>qfahDhjEE7YHWOH<b`&goMmcw*ocz_kcu7*l$e*g<7OZfl*
+
+diff --git bin/br/com/uff/controller/Perfil.class bin/br/com/uff/controller/Perfil.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..34af7f54b6db9e2fb0aadf15df0493f212a8642d
+GIT binary patch
+literal 3211
+zc$}S9TXz#x6#h<{b|%TxLT_{m0!5(-y^Konl2)KnpvBPE7OHrkOit4&NhY0{lu+@G
+zzPemKxqR|P*YZhTfGY9>{6oIE+-D{UlO}1wJe+f8pKtGd_P5X8Cx8F@$0Goz@NE=_
+za7o5&40E^~#hXZp;fjR$C^~RS3=3j!QN~*_EMYl{tGFh_D>B{|^E)!Gi}_s{?}_<+
+z86SxGLm3~*_*f|GF{EKg$VlK4Rv9{`%!28jVQ7mdRv5zPtqf=AN|^;dU&^PseN|8A
+zNYb6M3_Z7^+ot%g2*d80=`b8lrESfy@>*$imF9wLTe%#!wMA~Pnz>1a_KbCjy9`V5
+z)VjW@mo<mmn>p@kYpz?=W@%XV1xtLR#2t5XPnc7*3J#wXM~;}8Yfgy{W-;`5ids%D
+zWVN}1%d^}j_iY)S_6CBd6qZecYcsk<0I5_pFc<{oiHn?8F)m;ZcO26yFdS`tKo3FS
+zE&}9C-O#P+yqUF#rhWe5O0JpHQYJ;oaIglNwVWc)aMQNRYyPsyZgq=L3`4cu1v{%3
+z%q=}*+2x{cyQX0lb&5WSSq#X_)?)>RXvTDkx@)X)`WV^~SS2AdHHe_o<{J#dPnb%&
+zB{rptVei~mlFHCuf7xyos~2u!2Zd9O>6)&meew+1JNFc7jfwcbCIZ>=Ok8{l6RlGE
+z)P`E+-80m=?CQpiD|*qRm%0Moh6`nb7hSr;j)bg)H4-gbCEMT^O_70^U)1B`1PY$T
+zVTO=N-NaO|jvEqk3i2o@us|vAZ(eZ<Hef4oKrJCw^z3=bl2B5xiJKD23T|Ob!6&%Q
+z(6^(K{1YhnRBR6IQbASVXH9{D^i+YL3*hjcbybCbQ4eoLwGXF`5D0aA-6<;g5?@L9
+zTEQKBL%r*9>#F5|;m~fam0IuaHPry9$O8_1x2C1dEd->;pQyMQlq`2CZavRk(LPSZ
+z0}XiDwar3yGSMhv*x%5n8D!$v;q*x<Z)RtXIxulv;tTX{^~dKDO`CmBy5tzTUFq73
+zJZH_(wbtTIz=_?OeUu_wuJ-$5@x<O8zjZDuRuqT3(=J7mE{Wzm+$6|=WFfuI4cB|(
+z23nnyo>n@h2(T~SoQ^?{j_I8h<g;?TIV%m%)QNf{fl8aLR+?|HIj}q%s5BoqS`Q3X
+z+G1U$HHFtz+Cs3>e0XoRc133bkK5^%w{!Og@5mkyx|ge#eN(r|^|_tT-0uHu8voE>
+z2nXq(p!kKrM2DsE2z_ZZGn(5^-UqwuZ6Bqv!xQc!H9+wJIELqF4&!+oClo1%I?;ws
+zl06#f4sD|?ga-&eK>Pfk=(v6#QZlTD$L>K+wvTKh!jSAxJG!H4`!-^2P{V5bJt+6k
+znUqNUj4IWOyOJ`A_o;Hdcz-fN;%+rkFYZZ3N!+VO>&1P^7>WDUm?s|TKCq2}5R!_j
+zjErtWZNsk!&)@ap+r~o-QgkBvGzMtwMHl*L)laemh|}s6RGcN$WukJPNL(Qrb=u{`
+zQ=a%K6F0YsojW*z??~eZB=8eX;unnKcZ`vb7s$&v{=$nMvv-KSF8oI5VPbLsKa)<v
+zJHwBpHA0-n@jdB|Q9jOMi!?Pz<kcWM8f5aBB1;+~Wa%_sqE(dq9j0??h>^z#CP=P`
+z3{|oxRxjffFXBgd6|YeyleC^7U%rRQnun>Hhu3Q!&eS}dB@gFFGlI}Rcqm~Sc*DCm
+PA)LnyIk@0mri=dpcjBX;
+
+diff --git bin/br/com/uff/model/AvaliacaoAmigos.class bin/br/com/uff/model/AvaliacaoAmigos.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..9a2032da918c8ef03f5561f4c2fae5c0a4579a06
+GIT binary patch
+literal 2130
+zc$|fmTT|0e5Xb+gw&}$vA{RwLMMX;y;{ArARY0o<j#g%TOxr^}Oq(!C>d1HUL1(;;
+z4}JhYl;ds)y`-o5vfFdA``_Q5JxPE6`S}aLHLT}w5KCF)@F0hWD6)CP%g1b%*{rZx
+zW%DGBr)iV~5~?OJvbJr%x2=Zl)UA>e$h!0v1twm#oIo|@rt(##A&ZXV26mua#}^n6
+zGd@^5(({!cNT({TQjL<%Y92h1j`Zw6);8@%OHxqA4|rYQ{bxK?D(~)u@ulUJ^>V5F
+zRv=5!4Q1C{PvFE_#j~nz(`s#PSxvVl8`c}YWqZn{oJo!Fh9k=^8J67F5lC`hq+FAJ
+z)l*fQwvKik$m_sUPMuSBT9pPp_j(WPk?S_3?NESmPdO@B5;%~b-6Y+|gd{MurX0E6
+zYF4CIw&@&M-L2Y<O#<b0w3!UvDWA`yucu;2N?gUJs=GcFO4Vghs)coEgeiY-mCTp8
+zte`EE0*al3n#|As>!?h>CweMBIG76@>=LJy-@QuHv-R*e$Ec?6R;B&@i1EB8fD17F
+za%UK$Jxc9yFm+edSiV1KpY~;YaJ^KW(Qy}@s2;NYAQsELc3WOmt}33`XlyVGoWr-W
+z|KhFCixliGnwY{V6DAI&@yx_?%$Qii3lpOlGjWW~aU3!+ffFW9Vp8DD|89f8kq+uc
+zWm{GQf#JS$rQ55VAbkI51n=2zY;mI{-IOp5{+Iv;5=;w$!?YTv)e!k3v>ui?iV@l%
+z^yslcew=)QJL%h_#zIfMg`V0Y&(d@zWKV}5F}l9wQ-$vkpTn>-WOL*}l1Y-9reEe>
+z5YFNpd4cnoi3F}j0-3@WB);Lm$F_zM?oV{(XWID}a52g+QZ(1f7Eb;^@+%T?h$%`t
+z6^e}S1x6zL%S1jbKZ`;nXSMtJg4CxN%e1zaIb4d8mm(IUF!vRyILHj;T<8KZ+8{<W
+z5`lRwh!F>w)q*VOL5w)aJmoA5067+cSh%bKNykC1XhE)oQ|$vu$3bpT&dmWJ$HR*z
+z=z?9>fMntzceEfkNL~YyiG$pyoTULEeEYfZE!@_CWaA)3Eyx|*)q!N=AS;x!Isk-U
+RKl=B_VwiKU{j%N%{sOJ_ca;DD
+
+diff --git bin/br/com/uff/model/AvaliacaoHospedeiroxhospede.class bin/br/com/uff/model/AvaliacaoHospedeiroxhospede.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..8c7eb751ca96994c145293f1647862f634909be8
+GIT binary patch
+literal 2368
+zc$}4%dr#9)6u{3Nd%!4yJSI;Wh`Iq%6d&La84TFW1eCeNKfCQRO1gGwJHx(}CK?m}
+z@B{dvjOTP^kM3@XS#oagJ+EKSIlbARzrTJ1z!tm<Lm2jlU<i^V4oDo5NRc=qaZKVQ
+z1nCfD82Ho@gNf|5@<ov~MK8-4-R5O(CK$|otm(E|;d#|k3mQ-Ax?wA}YUmb&h~sf1
+zSGj4amd*7dmop`FS{5iyxXw+*=B2!%)i@drS~l&=^}hC)DOayL_L<btX)crd%piPa
+zSXEw9%Dlp0AzLuzqEV4+mzQ$IC~-|rH`NK!cL#s3==Gd&rc>M@)M~0yGE4@u-LXDd
+zHN{j70=P9qpAxr<rdm|+dAzM|7q+SDWwiBEnb4(LD`;qDc9!?RFf^{{Xcyd7b=BTu
+zFc6F9(d`g(G8oOOIzO#d3f#;oSanKb6csIxB(!%A{q~iLZP@6BPCBHB*Qf+nP2;9f
+zGkW7dncErc_*5(|?0LXy=p!+KnlMK&K)S63ix{YX6Gp5~k7%r~10|6#NwU?Nc~Op5
+zb0n+7dO;BX)|i41w*|+Y)xM*|saAg{JF3*|FePlWnu>KBQKAqAJ9TCuWZgbd^7H0k
+zbatUN8U)p{>gdI-5hVy;7&WuVk5!t8XrIP!kUx!h_vdhgpSWF5NN^t(B^U-tf(e+E
+zAOiO!m?kj;vl7gaVjdP4tpCr%F&Jy1pB1io(S{|we!_TJg}_Jo04D@@cX4+I*HPS$
+zaompM0g|}tAg)um`UtG+Y+7)J*v^XN&WiAEczjcoQRlv7_yY*6{si{TF<U|z#uYHA
+zAA>C8lhiPR2e5)GgNN|Q4InoId<WmxW`Lk`I4^X53^CVv53MOtaCPkm_`K<(=(FTR
+zh%~I+2=vq_8-qBk3P1+DAS*(UHCPvc40u6e=o9Y&(r6HaC$J#^@q0nmg&;C)ia`8c
+zkWKV?+5@C96%6$vkboEDxe(-;7$o2Y*+!q89w5^$$QI`41_^pWc7-4>;H3y8=mptF
+zpJWdZntw|CN;s?`FGxxVvMnCgkQXG4KA9dMbMCP2z-s}>pcf=71W90}1R#T6kaP6;
+V&;x{S0Q|!PZycY!=6&%N;2$=rrQrYo
+
+diff --git bin/br/com/uff/model/AvaliacaoHospedexhospedeiro.class bin/br/com/uff/model/AvaliacaoHospedexhospedeiro.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..b46586991d8bcd3f03256cb065d881d7f2300f88
+GIT binary patch
+literal 2367
+zc$}4%`%e==5XWarA5acK9+gLtf~YMZhvEZ7kwSsiG=Nf@_~W%*%8~0`b9XiHUumK-
+z@dy6^|0v_k-O<N&+r%`Pz1^Mf%;$FIHvRMW*KYvWg!fU1!rl-JL7L1ynFBHzGKXZ2
+z$Q(x?8-W~yfLdWNk-t*DD6*#LRXL~IyvofT1~VTUx~<lDQMJ^P#?!iP*ov(hy2T*o
+zD6Zu?H!an&xnAaSu7aW^!NxJyxvAK^QdG1CN2fu{rg`<IuRmrg+|(WaT;}kkkSly<
+z5WO_4I<F{IUSlwyFPU=LsL73s3%O=gxF%<t+o+2Rf}iTVV4%V6A>7ndrDB*2X1hau
+zvKor18kGOm5j7QVl})v*;PZIfv7Otds#noBNT-C7dZVPFo7s7~`-Y)$MMuBz8&y~B
+zT?PZmR1swdn3KV1Ue)<YqgLW(LBT_(Bt}`$ibz6pZ!u_Js#t~fZs@c_ig@lp@N4(H
+zxN6digsR-mVZo=8DPhS&mb)KI3bqMz1OsH-DzJco`qyB@>Qp3>eFc<6!X)WdY2u<B
+zt>Q>lhxfc7{;e|wA8redGpl_@i8HPGPIjD9v%-|H&1)*z?L>(p80^I9g@|?gM9I&Z
+zjnP?!R%;Mc%d4Xnw@#EGdTun#GCxwOBNBZIzfO8;@$RqT5WjHyW=Deiupq%OND@rI
+zqy#azC&4tC8JLw|jyB>j&tUC;I*!3u3;nco#mhD<;_VZ~yD9<!$_LmXIJ=9pJ2;Nw
+ze2n9C92bzp+YaM6g=2ugy4I!zYl!WPNbZaX?}f)VMVoN0ONKvy(8^C>-yF9^v{4)Z
+zg9b6k5<W?;6Fh)r92q=>M_vHA8Q?nvzBU7doyE9N{1}p+co)4XQFvwb2L$}-6R25q
+zBE(!TF9JQe$HpK9D*})KKghBWWEIv#AOn7oBx+JUK->Z`cmnGJkf0xAO$Z{xh6p6+
+z2iZW)(;gshS1{ZcfrR`Z&xIh*#2_I*$QEk0dw@)PAe)$@8zk%pc_RdQ0WU=$VL!+o
+zYSKMGsQ)SPD`B%n{2&=2$d<TSBYu!9YH~e5=DcRzhSvg+K|e@d2(p7GB>)-pgPft}
+VLk|$T0r3A0ymd6Y&HLgVz&|s?rELHJ
+
+diff --git bin/br/com/uff/model/EventoEsportivo.class bin/br/com/uff/model/EventoEsportivo.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..565f59e022cae59731164dd825364dbf20920af2
+GIT binary patch
+literal 2652
+zc$|fl|5Fo36u{qxB#>~30>NrQ1*`_FoVBfO#iD2eo&|z<rqlk=&XTNgon$X_w_!^E
+zs&=NG&h&@=0sW&oeeZH$vf0C7c$<CS_OtK3y?_7v`yT-K91e>x2|EQS!gCTHi5Dck
+zBe6?jkHkKS+Bh7H!%GGk*<>)g`;H%Tx6M_{^^_JZ5pFQJa@bQ^c0^r9@~ADglnON0
+zGEfnN`8eViw=2R(Mp~$baJ?o5En5sbLWz)T(X8`!PoUF8q-ozeIoBUg@=v<4zgMa5
+z`=0*;gUKLlaV3A{%^+lOb@wQA8$rkIy?Ntyf~IJ@ucIChWq?tOmehM(o%lgbQC6qR
+zLoFM!%kjz#7A)@Qc<Nnfil`CF1`im_4AkqD4y9_L!(@|d?kP;j+YB!DU3yx!-3s1y
+z!+wA-I^7`TZ8YbOsX7d9oa2_%BU{<>s|<>7QRk`tfmz?%LtTM%+ftEgMq|U;2Lrdn
+z&gCCTCG{qQvGQsi!=7Q)7)<X<CH8xrBN6%>n@x8N8oXV{TGBpIX7yVcQPW1sUOg5{
+z2h|8MwLGTs=UPI0I9#Rjs&%|_QQtmawwMX+0w$;pc6$Lcozw3Nk>S5sPIspRrtyG-
+zp&6KtOpSv+mG_;W8@kL{@11DKt5hC!I=xY4a7t!Q(+$oE-DAjWwro04vMEgVd|&{k
+zqT#)h*pp#!qM>aGt-fVEN|9Y(d=>P<hS-)g26INY*9nha<LKm8@e`s?HXQf_ZaLt<
+zlml~6a^NzFD{$3;k72=qB@!znZo(A4fe+0WKCt%{t{uG-4UIYI3kWa)89E5ClDNBs
+zyJ=i6;{K9=8JI-{A|&QKuJgENh-g6fQLID2ctys<MrjxE|C)g7a05+CcGEJNR?<y)
+z%b1N(T~OYRKj94j0CH=80sB2Zw~VrgE5J3#V(2RVa{5lN26u2}@G0C)61Zmx{(#JH
+zX9@DLa@iWZ9tTnICVJCB`L#QLLdHD)7RKC;GtBqBk__~#Uuy>U;4=%zm<h6G1-Tzz
+ze*|RA1X;%zHwC2MRR&*JL9!;ueJjY9c95(I@&IGLN&&f?fIL8tQIMPo^3V$MHGE?O
+z$(bOV81py<gyxqHeh3>Dkh}@<)C%$lzO{kmO^|Jj*+~KEKOlw~Y#`$%$O|jTV>`&W
+z39^qdwG@!01muYoWWoeFw1RBeK_*O)I>vmT0<w~TJheXGf(i1Y737)y`4&u&pD^a<
+U6p)+o^UXjdj;Wq~0k;AE2eaqXM*si-
+
+diff --git bin/br/com/uff/controller/Home.class bin/br/com/uff/controller/Home.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..7b4fc2692f46d22270de6d50f84de53866257afb
+GIT binary patch
+literal 3118
+zc$}S9-E$LF6#s3$c9Sen!&d_oQn1ia(xp&D69g&+TM2Dx0R=_eB)937&EBxPDFH?N
+zp7F&8eRh1)!8aTSraHs;rsF^4o8!5g4>oN>!947}Irn$Y?|j{}`}e=UJpphOU&WBZ
+z`8e{ppkOMFY0SvDC}TE;2+qe4#+=w)isCY^D0n-DcW_m~VS&6RPTo~;M6B;AI4aib
+z3P#2HzJg;4ZV1aC#G#`gqo|;yfC<qx1@kh>G8QC6P8gQqo|F(AOka@@I>Sp$!lt}o
+zv8h_6!0bzU!6Zo{&x^WwMYj#{zbOp43x*?MSH56tMPAWr^YgS?uFXx8+1doJupCj8
+z_zZVk3A2OwMSV%HYYwxQOy+6}u3Ob6=rPw2%(7cG=D4|aVNR7>4$BFTWrsPA!7T}?
+z?rI)_T#;)|jY8lOcKCg+P|&7!xp79YU`Z!PuOA|e8bzj!>jJQeh)hE->U^wXlsV;~
+z$0OHju3>6<gJO`dvkjWyPL-9IVe|SzW4p#_>xfVi`rD_|c3HQKyLyS+^{Q^WM$xG1
+zmdpH@8K1n)pDIX*l?<n<yTt`YfBIJ>sG08ZHiVp($nZcDS7o+Cp)iZ$p5m1Cn(3ac
+z7g^P9WHV^9TM`aDXHltLY$}|D^}C>1UJ2VeyY5c4)p?^U(tToeImbFnlsifGPQQTK
+z>Z1K$6TZrNCeFQpiEib8VME<|#51&E&ee-IFX&Y-y)-PSbJ~@5WEe6QNi@f6c9ESk
+zL<OSab`J}F75&&N<E9D|6|&X5V|iXC`!XyQ98~t+ZWoTqy!J&?aSOHz2d<2oiY448
+z>t{%#meNxqUR_3A#U0#L@gY7^aSyJFkHzD@czgmHIz80I^M={*W_Z!5s`wP2$@pBw
+z7x+@bzUSz5y6_cdIeM8@W|_-vi+oNuy-!&>Pm!7!dx9Y~Zj=p|r7XUrlakAZDOV;h
+z8<rra!P9+KO4$AEo3RSel=~dr>~(~}waICpbl|zJC{?)3+_}~~-8-0Gf1-BxxM@Wt
+zlVh%H8-<z}TKgNfUo&;9tj&?wD(BKZ(R5*v6~(X!lip-W!q!3m@gya*><y|Ng_={;
+zS6uQLW^$o4Ft~<Jdi99z@%eIxs!#13<TXmf)_g0EGvuO6jxxQH^QG4(rq@bU{4*`#
+z?Hb|HTS|30vT$Gx*y<z*#r>UO`i4?-+X{JYVEw5=3wWp#=pQit8PNsaF-Cm4E%=sl
+zyPd{;ubyLF%l_=w(Vlf6l>2#Z-_~uSKE3kA^6amQ)gKcy$M(<%nfL`DiK#}<ee_SG
+zRiZU~@G+!^-to)yjCjHx4A4_;0I(kiXboWyX+n{5AdMiM0)GuHBOqZalL#&&6u=({
+zXG6aua`iFfY&aQCh8{tAglIPM3u1}*BdD3ghGb+J8-r+{ZpzA;L{C!gl)jWzGKoY|
+z>6C8HMl*>m$!Mo^Yc`fiY)i&G=}=<(GI|5Z#*^`(L(518@e}%|h7vmyyOz->0J|H2
+zP%_j6JoF;{5f89~;uLvUq#dvwGJ3HEN%UbSMZXIpw98RSPf=3eq;y`Sd|W1t>y)uF
+z<>@A6$sy!D4AD$Jgs+joca-e!ahUACLJTALnLd+$#VDTO82-d@FW28-BXRwJgQOQE
+z#&1bCL%#Hpg<;YUdo~Y~c7%9u;0WzxVx1&gBT$I*C|Mjql<<9IcLXuwj1uE<#EGe~
+z3lVo8Ud3y~LDg$kR_wAAmE`SC;B~6<N!pLLSx>cDPq$ge+N^K1S<evbIB7-^_y-SU
+UobAIouc-p0K0ySNUZcJBACwY$CjbBd
+
+diff --git bin/br/com/uff/controller/Login.class bin/br/com/uff/controller/Login.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..5f991e15f9f93ea3f942f8d7b53816880b8f89d3
+GIT binary patch
+literal 2118
+zc$|$@ZFdtz6n-Xevq=^x2_k{Eq($0<&@76mq=;Y>q#D}NKo!B4Nit0rH#>26Qu#-I
+z=8K%@IsO2DlzMlw<n++jBxiQ!?sM;b?%U*_fB*a&z)iF>IER{n<t*;ta|3rdzQ`bn
+zTCm&;g!c`6nZ*j~1{%TnK^9-(A;+qLuMK<?i0D<5;}ORiL+Xz0+WIa-yj0#|NUW%?
+zWH{5bUAZ>wx25+)v>lS<nyMq5E#cY0IT9xHj_otdG~1rlQGIK;y-iP7d&+U7XEjyN
+zc9+RVS8XU?Gi;WcFU78SW%<(Eb)>d-v>sRwX=#lGoATG8^!4(wFn^$2UoHof<6WT`
+zF6`wH=-C}<)rBJWXNUffc&mmRauZ#GU)&4tQ_PO_bc`Ye?n~ddmCH~(oJfcuaHebf
+z1ED)R(qou=2Oq^#pFl`~QR1#fxPkP1+t<=1vTKUM8alf1sv`$_Y@B;z0}P8N%p8N^
+zMcH9EKHX6s8BWW-u$@(RTY3F3L%C4ba)jHnTH3SSUV!qYyCdGB1jDJ87M))ni9y&A
+zVN<PhY;ZiLj-%vEg7G;vIa(xYsiD`A5A2|UGGU8U15YO2!+C~e$b+nyc!H;N4m~oQ
+zKe)Umw(zZq@9>PcM0F;c6amNgCZ6L3nXq<LUz+#<KXUwJ;%AV(D<>!b%|TzfzUayR
+zrqs%FDJ|uwO^U8iMLFrHYO!wjY%Pnf+7+avWtAcAjHB}h43~}=5r)~L>qHH6qUtj&
+zoUGssQ}0%HABjk1Pd4(Qj;*ZK^*vIvC-sK#C~6&yz(Q$%<CG8TrRnz2?+7o-=Z17t
+zBPe~NH7@wQ1MD1R`G`5r5VO|XQJycAk00j4>kwHneW~wj^4%V4%HrbDB-h(7Wk-j%
+z)VbcIO7%S##;rrMb@U~2`4|XY9W<lA39mcJ<i5%ta@p>`V=;$3{p|#w7+5f;w7yR#
+zi=K?0$!l-GUWczQ(3%Q`Qz+1CjsducOY}@&8Z(3<W%e9#q)DbKx!4Ht7}hGeM7XIX
+z{zCHE8>DK<LUO5)_yfF_s*GST)OdmC(uLFrnK&xB><A{|je=3RKEkOue#d+*S;?Kr
+zO^t9iK;*`VR3Q~1UK61_npnqaA`sB6(GEl@O{YAHL~#xaxPmG^z-`*CV3F`u(kSCG
+zDs-t_hr|+Gia!W(fGp|Uz$`9PpbPXZl7$p$%wnGGaI%mlTUTL_-guWHOEZLABn?VI
+zl%8N$A}=i5T_ayH!f%tmCE}XL3$nRHNwnzwG-Ce|r6k7<jt@CL;<!maFpiIBaVsoC
+P44>drvi4b6n%n;anh!%q
+
+diff --git bin/br/com/uff/model/AvaliacaoParticipantexorganizador.class bin/br/com/uff/model/AvaliacaoParticipantexorganizador.class
+new file mode 100644
+index 0000000000000000000000000000000000000000..d84f728d4a9f887f9ad9aac389d850e738e15ec0
+GIT binary patch
+literal 2388
+zc$}4%YflqF6o${1UT9fGxyj87idZhPDtHCa0##}Vpi~k+Zrh;_DZ9<?mVm!X6OD-<
+z`~m(b<9oJCOSe<eG&!>~bKY~FopW~5U%!9+B%%d+lcE&8Oj43EY*yK<u~}!6W%G*7
+z>jZ5iD5p_GmNe?$JTQ+;qheZRBWHP{ESx2cM&8vdPacXr>B>SyWGu_}Oi$XDtI?3J
+zI5w)nai!}Ct0;_I38I^djn~2wj_HZgo>{30ICZ-o&&wx&^+%@sN!9nyt!KCLx%>x>
+z;^IhHp3TC7V-)Q}qqe_q9NHyOF|z(v)~(u(Cy#6h#}(1HEs?iju${zaMVcks(P*?i
+z-g~!ZI+EjbpE^QQ5^m9vMHA0`XU=WcbEH*<Z<LP-l4`9`ft%BMysNfd5vB#d__DO5
+zx1v#3dU_ACHRRN&cT-wot9DorPTs_+a}v8~R`x)`^I$RReUvD}VmoxkCk5V)iBl-b
+zs)>Rg+fLcE<R^Yrq>hz^mqXnL)6>ez$K3k<P+GCgut@~S28EbJkbfve(rrp^r_Wb#
+z8Xaje%@U2PGBt~&yDi>V6-iE=Ie5>R;F!5*XPkJwS?7V4b81wY6Q1!JOt(96q6C6%
+z`8|<vPoFsXPNP9u>(FcwhH84XRO8f%6Qp+Sno|_7BzMNtxeYMSQMlpTzl|(Dc<*FM
+zr)zXwrykOE>ZbvnhUkh;!)!)qRHrfC7^kZmJ^26r)96z3HMR=}qUg~CuA~$$umnXo
+zD`|8Av&)!W#Mq1ZC4p%l7Qhp1$1x6Kj4)o?+OT2`@csyXf5a;U;qkt(H~c$P!;dI7
+z^PRLWzS{(B3L_zC6hUs{Nv}K6Et<rLmZqs7fYAu>l_H-T0pkARxKezF(t&sd-kc~t
+zGy9Dq;q*74neZbF)xClU{8T?SjizZv0n!x)nN)(z(wqvUD-4o`X1W7Ny+9h>rFjKN
+zGz>DQ1TpBI3M3i^xd+Yt4j}ce(6FxpiG@KHl^_q)Ah9sW6KI}x02vNI7LcPIBpwD?
+zR)RdFM=Fqb7~~~1nGPV_|D5=-vRM;hkaZ=<6LqsD!XO*a<T`+i1<m@Do+&`O!yubV
+gkR_ay0;D?(vIEWA4j_C3;7<@e_cbex`{D)BAKC`5IRF3v
+
