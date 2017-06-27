@@ -25,7 +25,6 @@ public class Home extends HttpServlet {
             Dao dao = new Dao();
 
             List<AvaliacaoAmigos> avaliacaoAmigos = dao.buscaAvaliacaoAmigosPeloId(usuario.getId());
-            System.out.println("Criou a Lista");
             session.setAttribute("avaliacaoAmigos", avaliacaoAmigos);
 
             List<AvaliacaoHospedeiroxhospede> avaliacaoHospedeiroxhospede

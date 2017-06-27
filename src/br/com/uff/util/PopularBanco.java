@@ -12,17 +12,17 @@ public class PopularBanco {
 
     public static void main(String[] args) throws ParseException {
 
-         /*
-            Abrindo conexão com o banco. Chamamos o EntityManager que vai cuidar das transações com o banco.
-            Lembrando, criar o BANCO DE DADOS chamado "sistema_aeroporto_dw"
-         */
+        /*
+           Abrindo conexão com o banco. Chamamos o EntityManager que vai cuidar das transações com o banco.
+           Lembrando, criar o BANCO DE DADOS chamado "sistema_aeroporto_dw"
+        */
         EntityManager manager = new JPAUtil().getEntityManager();
 
-        /*
-            Estado Managed: Dados estão sincronizados com o banco. Esse é o objetivo.
-            Estado Transient: Os dados ainda não estão no banco
-            Estado Detached: Já existem dados no banco, mas os dados da entidade estão desatualizados. Para resolver, precisamos fazer um Merge.
-         */
+       /*
+           Estado Managed: Dados estão sincronizados com o banco. Esse é o objetivo.
+           Estado Transient: Os dados ainda não estão no banco
+           Estado Detached: Já existem dados no banco, mas os dados da entidade estão desatualizados. Para resolver, precisamos fazer um Merge.
+        */
 
         try {
             EntityTransaction transaction = manager.getTransaction();
@@ -185,16 +185,46 @@ public class PopularBanco {
             avaliacaoAmigos.setPublicar(Boolean.TRUE);
             manager.merge(avaliacaoAmigos);
 
-            Hospedagem hospedagem = new Hospedagem();
-            hospedagem.setId(1);
-            hospedagem.setHospedeiro(usuario4);
-            hospedagem.setHospede(usuario5);
-            hospedagem.setDataInicial(retornaDataFormatada("2017-01-01"));
-            hospedagem.setDataFinal(retornaDataFormatada("2017-02-01"));
-            manager.merge(hospedagem);
+            Hospedagem hospedagem1 = new Hospedagem();
+            hospedagem1.setId(1);
+            hospedagem1.setHospede(usuario1);
+            hospedagem1.setHospedeiro(usuario2);
+            hospedagem1.setPraticamSurf(5);
+            hospedagem1.setViajantes(5);
+            hospedagem1.setDataInicial(retornaDataFormatada("2017-01-01"));
+            hospedagem1.setDataFinal(retornaDataFormatada("2017-02-01"));
+            manager.merge(hospedagem1);
+
+            Hospedagem hospedagem2 = new Hospedagem();
+            hospedagem2.setId(2);
+            hospedagem2.setHospede(usuario3);
+            hospedagem2.setHospedeiro(usuario4);
+            hospedagem2.setPraticamSurf(3);
+            hospedagem2.setViajantes(6);
+            hospedagem2.setDataInicial(retornaDataFormatada("2017-04-01"));
+            hospedagem2.setDataFinal(retornaDataFormatada("2017-06-01"));
+            manager.merge(hospedagem2);
+
+            Hospedagem hospedagem3 = new Hospedagem();
+            hospedagem3.setId(3);
+            hospedagem3.setHospede(usuario1);
+            hospedagem3.setHospedeiro(usuario2);
+            hospedagem3.setPraticamSurf(2);
+            hospedagem3.setViajantes(2);
+            hospedagem3.setDataInicial(retornaDataFormatada("2017-02-11"));
+            hospedagem3.setDataFinal(retornaDataFormatada("2017-02-17"));
+            manager.merge(hospedagem3);
+
+//            Hospedagem hospedagem = new Hospedagem();
+//            hospedagem.setId(1);
+//            hospedagem.setHospedeiro(usuario4);
+//            hospedagem.setHospede(usuario5);
+//            hospedagem.setDataInicial(retornaDataFormatada("2017-01-01"));
+//            hospedagem.setDataFinal(retornaDataFormatada("2017-02-01"));
+//            manager.merge(hospedagem);
 
             AvaliacaoHospedeiroxhospede avaliacaoHospedeiroxhospede = new AvaliacaoHospedeiroxhospede();
-            avaliacaoHospedeiroxhospede.setHospedagem(hospedagem);
+            avaliacaoHospedeiroxhospede.setHospedagem(hospedagem1);
             avaliacaoHospedeiroxhospede.setAvaliador(usuario4);
             avaliacaoHospedeiroxhospede.setAvaliado(usuario5);
             avaliacaoHospedeiroxhospede.setDescricao("Ótimo Guest");
@@ -203,7 +233,7 @@ public class PopularBanco {
             manager.merge(avaliacaoHospedeiroxhospede);
 
             AvaliacaoHospedexhospedeiro avaliacaoHospedexhospedeiro = new AvaliacaoHospedexhospedeiro();
-            avaliacaoHospedexhospedeiro.setHospedagem(hospedagem);
+            avaliacaoHospedexhospedeiro.setHospedagem(hospedagem1);
             avaliacaoHospedexhospedeiro.setAvaliador(usuario5);
             avaliacaoHospedexhospedeiro.setAvaliado(usuario4);
             avaliacaoHospedexhospedeiro.setDescricao("Foi bem ruim..");
@@ -272,4 +302,3 @@ public class PopularBanco {
         return (dataSql);
     }
 }
-
