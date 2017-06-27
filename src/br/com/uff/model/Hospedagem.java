@@ -15,6 +15,10 @@ public class Hospedagem {
     @OneToOne
     private Usuario hospede;
 
+    private Integer qtdViajantes;
+
+    private Integer qtdPraticamSurf;
+
     @Temporal(TemporalType.DATE)
     private Date dataInicial;
 
@@ -63,4 +67,21 @@ public class Hospedagem {
     public void setDataFinal(Date dataFinal) {
         this.dataFinal = dataFinal;
     }
+
+    public Integer getViajantes() {
+        return qtdViajantes;
+    }
+
+    public void setViajantes(Integer qtdViajantes) {
+        this.qtdViajantes = qtdViajantes;
+    }
+
+    public Integer getPraticamSurf() {
+        return qtdPraticamSurf;
+    }
+
+    public void setPraticamSurf(Integer qtdPraticamSurf) {
+        this.qtdPraticamSurf = qtdPraticamSurf;
+    }
+
 }

@@ -19,6 +19,17 @@ public class Dao {
         return usuarioEncontrado;
     }
 
+//    public Usuario buscarUsuarioPeloendereco (Integer id, Integer endereco_id) {
+//        Usuario usuarioEncontrado;
+//        String jpql = "select usuario from Usuario usuario" +" where usuario.id= ?1 and usuario.endereco= ?2";
+//        usuarioEncontrado = manager.createQuery(jpql,Usuario.class)
+//                .setParameter(1,id)
+//                .setParameter(2,endereco_id)
+//                .getSingleResult();
+//        return usuarioEncontrado;
+//    }
+
+
     public Usuario buscarUsuarioPeloId (Integer id) {
         Usuario usuarioEncontrado;
         String jpql = "select usuario from Usuario usuario" +" where usuario.id= ?1";
