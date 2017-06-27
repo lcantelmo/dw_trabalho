@@ -12,17 +12,17 @@ public class PopularBanco {
 
     public static void main(String[] args) throws ParseException {
 
-         /*
-            Abrindo conexão com o banco. Chamamos o EntityManager que vai cuidar das transações com o banco.
-            Lembrando, criar o BANCO DE DADOS chamado "sistema_aeroporto_dw"
-         */
+        /*
+           Abrindo conexão com o banco. Chamamos o EntityManager que vai cuidar das transações com o banco.
+           Lembrando, criar o BANCO DE DADOS chamado "sistema_aeroporto_dw"
+        */
         EntityManager manager = new JPAUtil().getEntityManager();
 
-        /*
-            Estado Managed: Dados estão sincronizados com o banco. Esse é o objetivo.
-            Estado Transient: Os dados ainda não estão no banco
-            Estado Detached: Já existem dados no banco, mas os dados da entidade estão desatualizados. Para resolver, precisamos fazer um Merge.
-         */
+       /*
+           Estado Managed: Dados estão sincronizados com o banco. Esse é o objetivo.
+           Estado Transient: Os dados ainda não estão no banco
+           Estado Detached: Já existem dados no banco, mas os dados da entidade estão desatualizados. Para resolver, precisamos fazer um Merge.
+        */
 
         try {
             EntityTransaction transaction = manager.getTransaction();
@@ -302,4 +302,3 @@ public class PopularBanco {
         return (dataSql);
     }
 }
-

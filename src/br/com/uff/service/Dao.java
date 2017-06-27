@@ -4,7 +4,9 @@ import br.com.uff.model.*;
 import br.com.uff.util.JPAUtil;
 
 import javax.persistence.EntityManager;
+import java.util.Date;
 import java.util.List;
+import javax.persistence.Query;
 
 public class Dao {
 
@@ -93,4 +95,39 @@ public class Dao {
                 .getResultList();
         return avaliacaoEncontrada;
     }
+
+    public List<Usuario> buscaUsuarioPorLocalidade (String cidade, String pais) {
+        List<Usuario> usuarioList;
+        String jpql = "select usuario from Usuario usuario" +
+                " where usuario.endereco.pais = ?1 and usuario.endereco.cidade = ?2 and usuario.hospedeiro = ?3";
+        usuarioList = manager.createQuery(jpql, Usuario.class)
+                .setParameter(1, pais)
+                .setParameter(2, cidade)
+                .setParameter(3, true)
+                .getResultList();
+        return usuarioList;
+    }
+
+    public void setAvaliacaoAmigos (String descAvaliacao, Usuario avaliador, Usuario avaliado, Integer nota) {
+        manager.getTransaction().begin();
+        AvaliacaoAmigos avaliacao = new AvaliacaoAmigos();
+        avaliacao.setAvaliado(avaliado);
+        avaliacao.setAvaliador(avaliador);
+        avaliacao.setDescricao(descAvaliacao);
+        avaliacao.setPublicar(false);
+        avaliacao.setNota(nota);
+        manager.merge(avaliacao);
+        manager.getTransaction().commit();
+    }
+
+    public  void updateAvaliacao (Integer id_avaliacao) {
+        manager.getTransaction().begin();
+        AvaliacaoAmigos avaliacao;
+        String jpql = "update AvaliacaoAmigos avaliacao set avaliacao.publicar = 'true' where avaliacao.id = ?1";
+        Query query = manager.createQuery(jpql);
+        query.executeUpdate();
+        manager.getTransaction().commit();
+    }
+
+
 }
