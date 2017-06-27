@@ -2,6 +2,7 @@ package br.com.uff.model;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Entity
 public class EventoEsportivo {
@@ -12,8 +13,8 @@ public class EventoEsportivo {
     @ManyToOne
     private Usuario organizador;
 
-    @OneToOne
-    private Usuario participante;
+    @ManyToMany
+    private List<Usuario> participantes;
 
     private String descricao;
 
@@ -46,12 +47,19 @@ public class EventoEsportivo {
         this.organizador = organizador;
     }
 
-    public Usuario getParticipante() {
-        return participante;
+    public List<Usuario> getParticipantes() {
+        return this.participantes;
     }
 
     public void setParticipante(Usuario participante) {
-        this.participante = participante;
+        this.participantes.add(participante);
+    }
+
+    public void setParticipantes(List<Usuario> listaUsuarios){
+        int i;
+        for(i=0; i<listaUsuarios.size();i++){
+            this.participantes.add(listaUsuarios.get(i));
+        }
     }
 
     public String getDescricao() {
