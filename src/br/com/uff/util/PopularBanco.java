@@ -240,12 +240,18 @@ public class PopularBanco {
             avaliacaoHospedexhospedeiro.setNota(1);
             avaliacaoHospedexhospedeiro.setPublicar(Boolean.TRUE);
             manager.merge(avaliacaoHospedexhospedeiro);
+            // localSaida, duracao, aluguelCarro, gasolina, valorHospedagem
 
             EventoEsportivo eventoEsportivo = new EventoEsportivo();
             eventoEsportivo.setId(1);
             eventoEsportivo.setOrganizador(usuario1);
             eventoEsportivo.setParticipante(usuario2);
-            eventoEsportivo.setDescricao("Vamos surfar na praia de Ipanema");
+            eventoEsportivo.setDescricao("Vamos surfar no Arpoardor");
+            eventoEsportivo.setlocalSaida("Arpoardor");
+            eventoEsportivo.setduracao(10);
+            eventoEsportivo.setaluguelCarro(120.00);
+            eventoEsportivo.setgasolina(50.00);
+            eventoEsportivo.setvalorHospedagem(500.00);
             eventoEsportivo.setDataInicial(retornaDataFormatada("2017-05-10"));
             eventoEsportivo.setHoraIncial(retornaHoraFormatada("06:00"));
             eventoEsportivo.setHoraFinal(retornaHoraFormatada("09:00"));
@@ -269,6 +275,8 @@ public class PopularBanco {
             avaliacaoParticipantexorganizador.setNota(5);
             avaliacaoParticipantexorganizador.setPublicar(Boolean.TRUE);
             manager.merge(avaliacaoParticipantexorganizador);
+
+
 
             transaction.commit();
 

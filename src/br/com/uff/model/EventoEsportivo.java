@@ -1,6 +1,7 @@
 package br.com.uff.model;
 
 import javax.persistence.*;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -14,7 +15,7 @@ public class EventoEsportivo {
     private Usuario organizador;
 
     @ManyToMany
-    private List<Usuario> participantes;
+    private List<Usuario> participantes = new ArrayList<Usuario>();
 
     private String descricao;
 
@@ -27,6 +28,13 @@ public class EventoEsportivo {
     @Temporal(TemporalType.TIME)
     private Date horaFinal;
     private Integer totalParticipantes;
+
+    private String localSaida;
+    private Integer duracao;
+    private Double aluguelCarro;
+    private Double gasolina;
+    private Double valorHospedagem;
+
 
     public EventoEsportivo() {
     }
@@ -51,8 +59,8 @@ public class EventoEsportivo {
         return this.participantes;
     }
 
-    public void setParticipante(Usuario participante) {
-        this.participantes.add(participante);
+    public void setParticipante(Usuario participantes) {
+        this.participantes.add(participantes);
     }
 
     public void setParticipantes(List<Usuario> listaUsuarios){
@@ -101,4 +109,48 @@ public class EventoEsportivo {
     public void setTotalParticipantes(Integer totalParticipantes) {
         this.totalParticipantes = totalParticipantes;
     }
+
+    public String getlocalSaida() {
+        return localSaida;
+    }
+
+    public void setlocalSaida(String localSaida) {
+        this.localSaida = localSaida;
+    }
+
+    public Integer getduracao() {
+        return duracao;
+    }
+
+    public void setduracao(Integer duracao) {
+        this.duracao = duracao;
+    }
+
+    public Double getaluguelCarro() {
+        return aluguelCarro;
+    }
+
+    public void setaluguelCarro(Double aluguelCarro) {
+        this.aluguelCarro = aluguelCarro;
+    }
+
+    public Double getgasolina() {
+        return gasolina;
+    }
+
+    public void setgasolina(Double gasolina) {
+        this.gasolina = gasolina;
+    }
+
+    public Double getvalorHospedagem() {
+        return valorHospedagem;
+    }
+
+    public void setvalorHospedagem(Double valorHospedagem) {
+        this.valorHospedagem = valorHospedagem;
+    }
+
+    // localSaida, duracao, aluguelCarro, gasolina, valorHospedagem
+
 }
+
