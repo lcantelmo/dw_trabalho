@@ -25,6 +25,32 @@ public class Hospedagem {
     @Temporal(TemporalType.DATE)
     private Date dataFinal;
 
+    public Integer getQtdViajantes() {
+        return qtdViajantes;
+    }
+
+    public void setQtdViajantes(Integer qtdViajantes) {
+        this.qtdViajantes = qtdViajantes;
+    }
+
+    public Integer getQtdPraticamSurf() {
+        return qtdPraticamSurf;
+    }
+
+    public void setQtdPraticamSurf(Integer qtdPraticamSurf) {
+        this.qtdPraticamSurf = qtdPraticamSurf;
+    }
+
+    public boolean isRequisicao() {
+        return requisicao;
+    }
+
+    public void setRequisicao(boolean requisicao) {
+        this.requisicao = requisicao;
+    }
+
+    private boolean requisicao = false;
+
     public Hospedagem() {
     }
 
@@ -83,6 +109,7 @@ public class Hospedagem {
     public void setPraticamSurf(Integer qtdPraticamSurf) {
         this.qtdPraticamSurf = qtdPraticamSurf;
     }
+
 
 }
 

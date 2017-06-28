@@ -122,12 +122,21 @@ public class Dao {
 
     public  void updateAvaliacao (Integer id_avaliacao) {
         manager.getTransaction().begin();
-        AvaliacaoAmigos avaliacao;
         String jpql = "update AvaliacaoAmigos avaliacao set avaliacao.publicar = 'true' where avaliacao.id = ?1";
         Query query = manager.createQuery(jpql);
         query.executeUpdate();
         manager.getTransaction().commit();
     }
 
+    public List<Hospedagem> buscarListReqHosp (Integer id) {
+        List<Hospedagem> listUsuario;
+        String jpql = "select hospedagem from Hospedagem hospedagem where hospedagem.requisicao = ?1" +
+                " and hospedagem.hospedeiro.id = ?2";
+        listUsuario = manager.createQuery(jpql, Hospedagem.class)
+                .setParameter(1, false)
+                .setParameter(2, id)
+                .getResultList();
+        return  listUsuario;
+    }
 
 }
