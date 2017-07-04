@@ -22,44 +22,6 @@ public class Dao {
         return usuarioEncontrado;
     }
 
-    public Endereco buscarEnderecoPeloCep (String cep) {
-        Endereco enderecoEncontrado;
-        String jpql = "select endereco from Endereco endereco" +" where endereco.cep= ?1";
-        enderecoEncontrado = manager.createQuery(jpql,Endereco.class)
-                .setParameter(1,cep)
-                .getSingleResult();
-        return enderecoEncontrado;
-    }
-
-    public void cadastroEndereco (String cep, String rua, String bairro, String cidade, String estado, String pais){
-        int cepConvertido = Integer.parseInt(cep);
-        try {
-            EntityTransaction transaction = manager.getTransaction();
-
-            transaction.begin();
-
-            Endereco endereco1 = new Endereco();
-            endereco1.setCep(cepConvertido);
-            endereco1.setRua(rua);
-            endereco1.setBairro(bairro);
-            endereco1.setCidade(cidade);
-            endereco1.setEstado(estado);
-            endereco1.setPais(pais);
-            manager.merge(endereco1);
-            transaction.commit();
-        }catch (Exception e) {
-            e.printStackTrace();
-            if (manager.isOpen()) {
-                manager.getTransaction().rollback();
-            }
-        } finally {
-            if (manager.isOpen()) {
-                manager.close();
-            }
-        }
-        System.exit(0);
-    }
-
 //    public Usuario buscarUsuarioPeloendereco (Integer id, Integer endereco_id) {
 //        Usuario usuarioEncontrado;
 //        String jpql = "select usuario from Usuario usuario" +" where usuario.id= ?1 and usuario.endereco= ?2";
@@ -69,7 +31,6 @@ public class Dao {
 //                .getSingleResult();
 //        return usuarioEncontrado;
 //    }
-
 
     public Usuario buscarUsuarioPeloId (Integer id) {
         Usuario usuarioEncontrado;
@@ -88,6 +49,77 @@ public class Dao {
                 .setParameter(2, senha)
                 .getSingleResult();
         return usuarioEncontrado;
+    }
+
+    public void cadastraUsuario (String email, String senha, String nome, Endereco endereco, String numero, String complemento,
+                                 Date data_nasc, String foto_perfil, String esporte, boolean hospedeiro, Integer qnt_hospedes){
+        try {
+            EntityTransaction transaction = manager.getTransaction();
+
+            transaction.begin();
+
+            Usuario usuario1 = new Usuario();
+            usuario1.setEmail(email);
+            usuario1.setSenha(senha);
+            usuario1.setNome(nome);
+            usuario1.setEndereco(endereco);
+            usuario1.setNumero(numero);
+            usuario1.setComplemento(complemento);
+            usuario1.setData_nascimento(data_nasc);
+            usuario1.setFoto_perfil(foto_perfil);
+            usuario1.setEsporte_fav(esporte);
+            usuario1.setHospedeiro(hospedeiro);
+            usuario1.setQnt_hospedes(qnt_hospedes);
+            manager.merge(endereco);
+            manager.merge(usuario1);
+        }catch (Exception e) {
+            e.printStackTrace();
+            if (manager.isOpen()) {
+                manager.getTransaction().rollback();
+            }
+        } finally {
+            if (manager.isOpen()) {
+                manager.close();
+            }
+        }
+        System.exit(0);
+    }
+
+    public Endereco buscarEnderecoPeloCep (Integer cep) {
+        Endereco enderecoEncontrado;
+        String jpql = "select endereco from Endereco endereco" +" where endereco.cep= ?1";
+        enderecoEncontrado = manager.createQuery(jpql,Endereco.class)
+                .setParameter(1,cep)
+                .getSingleResult();
+        return enderecoEncontrado;
+    }
+
+    public void cadastroEndereco (Integer cep, String rua, String bairro, String cidade, String estado, String pais){
+        try {
+            EntityTransaction transaction = manager.getTransaction();
+
+            transaction.begin();
+
+            Endereco endereco1 = new Endereco();
+            endereco1.setCep(cep);
+            endereco1.setRua(rua);
+            endereco1.setBairro(bairro);
+            endereco1.setCidade(cidade);
+            endereco1.setEstado(estado);
+            endereco1.setPais(pais);
+            manager.merge(endereco1);
+            transaction.commit();
+        }catch (Exception e) {
+            e.printStackTrace();
+            if (manager.isOpen()) {
+                manager.getTransaction().rollback();
+            }
+        } finally {
+            if (manager.isOpen()) {
+                manager.close();
+            }
+        }
+        System.exit(0);
     }
 
     public List<AvaliacaoAmigos> buscaAvaliacaoAmigosPeloId (Integer id) {
