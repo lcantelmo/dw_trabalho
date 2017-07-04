@@ -183,7 +183,7 @@
             <div class="header-description gridContainer">
                 <div class="row header-description-row">
                     <div class="header-content header-content-right">
-                        <h1 data-text-effect="" class="heading8" style="opacity: 1;">PROGRAMA DE SENSENVOLVIMENTO WEB</h1><p data-text-effect="" class="header-subtitle" style="opacity: 1;">Programa desenvolvido por Hugo, Leonardo, Vitor e Patrick</p><a class="button blue big hp-header-primary-button" href="login.jsp">LOGAR</a><a class="button green big hp-header-secondary-button" href="login.jsp">REGISTRAR</a>    </div>
+                        <h1 data-text-effect="" class="heading8" style="opacity: 1;">PROGRAMA DE SENSENVOLVIMENTO WEB</h1><p data-text-effect="" class="header-subtitle" style="opacity: 1;">Programa desenvolvido por Hugo, Leonardo, Vitor e Patrick</p><a class="button blue big hp-header-primary-button" href="login.jsp">LOGAR</a><a class="button green big hp-header-secondary-button" href="cadastro.jsp">REGISTRAR</a>    </div>
                 </div>
             </div>
 

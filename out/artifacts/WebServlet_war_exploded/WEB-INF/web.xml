@@ -48,4 +48,13 @@
         <servlet-name>logoutServlet</servlet-name>
         <url-pattern>/logout</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cadastroServlet</servlet-name>
+        <servlet-class>br.com.uff.controller.cadastro</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>cadastroServlet</servlet-name>
+        <url-pattern>/cadastro</url-pattern>
+    </servlet-mapping>
 </web-app>

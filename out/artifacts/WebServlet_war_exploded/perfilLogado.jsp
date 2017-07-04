@@ -108,19 +108,5 @@
         <br><td>Nota: <%out.println(a.getNota());%></td>
     </tr>
     <%}%>
-    <h4>Lista de Solicitações de hospedeiros:</h4>
-    <%
-        List<Hospedagem> listReqHosp
-                = (List<Hospedagem>)session.getAttribute("listReqHosp");
-        Usuario hospede;
-        for (Hospedagem a : listReqHosp) {
-        hospede = a.getHospede();
-
-    %>
-    <tr>
-        <td><img src="fotos/<%out.println(hospede.getFoto_perfil());%>"></td>
-        <td><a href="perfil?id=<%out.println(hospede.getId());%>"><%out.println(hospede.getNome());%></a></td>
-    </tr>
-    <%}%>
 </body>
 </html>
