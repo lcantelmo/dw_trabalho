@@ -6,6 +6,7 @@ import br.com.uff.util.JPAUtil;
 import javax.persistence.EntityManager;
 import java.util.Date;
 import java.util.List;
+import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
 
 public class Dao {
@@ -19,6 +20,44 @@ public class Dao {
                 .setParameter(1,email)
                 .getSingleResult();
         return usuarioEncontrado;
+    }
+
+    public Endereco buscarEnderecoPeloCep (String cep) {
+        Endereco enderecoEncontrado;
+        String jpql = "select endereco from Endereco endereco" +" where endereco.cep= ?1";
+        enderecoEncontrado = manager.createQuery(jpql,Endereco.class)
+                .setParameter(1,cep)
+                .getSingleResult();
+        return enderecoEncontrado;
+    }
+
+    public void cadastroEndereco (String cep, String rua, String bairro, String cidade, String estado, String pais){
+        int cepConvertido = Integer.parseInt(cep);
+        try {
+            EntityTransaction transaction = manager.getTransaction();
+
+            transaction.begin();
+
+            Endereco endereco1 = new Endereco();
+            endereco1.setCep(cepConvertido);
+            endereco1.setRua(rua);
+            endereco1.setBairro(bairro);
+            endereco1.setCidade(cidade);
+            endereco1.setEstado(estado);
+            endereco1.setPais(pais);
+            manager.merge(endereco1);
+            transaction.commit();
+        }catch (Exception e) {
+            e.printStackTrace();
+            if (manager.isOpen()) {
+                manager.getTransaction().rollback();
+            }
+        } finally {
+            if (manager.isOpen()) {
+                manager.close();
+            }
+        }
+        System.exit(0);
     }
 
 //    public Usuario buscarUsuarioPeloendereco (Integer id, Integer endereco_id) {

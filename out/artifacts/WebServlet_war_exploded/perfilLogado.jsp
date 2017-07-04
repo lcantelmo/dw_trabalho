@@ -108,6 +108,5 @@
         <br><td>Nota: <%out.println(a.getNota());%></td>
     </tr>
     <%}%>
-    <h4>Lista de Solicitações de hospedeiros:</h4>
 </body>
 </html>
