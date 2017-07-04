@@ -41,6 +41,9 @@ public class Perfil extends HttpServlet{
                     = dao.buscaAvaliacaoParticipantexOrganizadorPeloId(usuario.getId());
             session.setAttribute("avaliacaoParticipantexorganizadorPerfil", avaliacaoParticipantexorganizador);
 
+            List<Hospedagem> listReqHospede = dao.buscarListReqHosp(usuario.getId());
+            session.setAttribute("listReqHosp", listReqHospede);
+
             RequestDispatcher dispatcher = req.getRequestDispatcher("perfilAmigo.jsp");
             dispatcher.forward(req, resp);
         }catch (Exception e){

@@ -1,5 +1,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="br.com.uff.model.*" %>
+<%@ page import="br.com.uff.controller.BuscaHospedagem" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
 
@@ -108,5 +109,6 @@
         <br><td>Nota: <%out.println(a.getNota());%></td>
     </tr>
     <%}%>
+
 </body>
 </html>

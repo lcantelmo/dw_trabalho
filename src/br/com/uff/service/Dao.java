@@ -8,6 +8,9 @@ import java.util.Date;
 import java.util.List;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Query;
+import javax.persistence.TemporalType;
+import javax.persistence.criteria.CriteriaBuilder;
+import javax.print.attribute.DateTimeSyntax;
 
 public class Dao {
 
@@ -191,10 +194,10 @@ public class Dao {
         manager.getTransaction().commit();
     }
 
-    public  void updateAvaliacao (Integer id_avaliacao) {
+    public void updateAvaliacao (Integer id_avaliacao) {
         manager.getTransaction().begin();
         String jpql = "update AvaliacaoAmigos avaliacao set avaliacao.publicar = 'true' where avaliacao.id = ?1";
-        Query query = manager.createQuery(jpql);
+        Query query = manager.createQuery(jpql).setParameter(1, id_avaliacao);
         query.executeUpdate();
         manager.getTransaction().commit();
     }
@@ -208,6 +211,24 @@ public class Dao {
                 .setParameter(2, id)
                 .getResultList();
         return  listUsuario;
+    }
+
+    public void setSaidaEsporte (String descricao, Date horaInicial, Date horaFinal,
+                                 List<Usuario> listParticipantes, double aluguelCarro, double gasolina, double valorHospedagem,
+                                 Integer totalPart, String localSaida) {
+        manager.getTransaction().begin();
+        EventoEsportivo evento = new EventoEsportivo();
+        evento.setTotalParticipantes(totalPart);
+        evento.setHoraFinal(horaFinal);
+        evento.setHoraIncial(horaInicial);
+        evento.setDescricao(descricao);
+        evento.setlocalSaida(localSaida);
+        evento.setgasolina(gasolina);
+        evento.setaluguelCarro(aluguelCarro);
+        evento.setParticipantes(listParticipantes);
+        evento.setvalorHospedagem(valorHospedagem);
+        manager.merge(evento);
+        manager.getTransaction().commit();
     }
 
 }
