@@ -16,7 +16,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class cadastro extends HttpServlet{
+public class Cadastro extends HttpServlet{
     protected void doPost (HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
         String emailInformado = request.getParameter("email");
@@ -85,7 +85,7 @@ public class cadastro extends HttpServlet{
             }
         }catch (NoResultException e){
             //Informa que não pode cadastrar o endereço do usuário
-            request.setAttribute("mensagemRetorno", "Tivemos algum problema com seu cadastro. Entre em contato com o suporte.");
+            request.setAttribute("mensagemRetorno", "Tivemos algum problema com seu Cadastro. Entre em contato com o suporte.");
             RequestDispatcher dispatcher = request.getRequestDispatcher("cadastro.jsp");
             dispatcher.forward(request, response);
         }

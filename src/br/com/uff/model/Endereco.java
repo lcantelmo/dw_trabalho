@@ -38,6 +38,7 @@ public class Endereco {
     public void setId(Integer id) {
         this.id = id;
     }
+
     public Integer getCep() {
         return cep;
     }

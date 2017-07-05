@@ -37,7 +37,7 @@ public class Dao {
 
     public Usuario buscarUsuarioPeloId (Integer id) {
         Usuario usuarioEncontrado;
-        String jpql = "select usuario from Usuario usuario" +" where usuario.id= ?1";
+        String jpql = "select usuario from Usuario usuario where usuario.id= ?1";
         usuarioEncontrado = manager.createQuery(jpql,Usuario.class)
                 .setParameter(1,id)
                 .getSingleResult();
@@ -46,7 +46,7 @@ public class Dao {
 
     public Usuario buscarUsuarioPeloEmailESenha (String email, String senha) {
         Usuario usuarioEncontrado;
-        String jpql = "select usuario from Usuario usuario" +" where usuario.email= ?1 and usuario.senha= ?2";
+        String jpql = "select usuario from Usuario usuario where usuario.email= ?1 and usuario.senha= ?2";
         usuarioEncontrado = manager.createQuery(jpql,Usuario.class)
                 .setParameter(1, email)
                 .setParameter(2, senha)
@@ -75,6 +75,7 @@ public class Dao {
             usuario1.setQnt_hospedes(qnt_hospedes);
             manager.merge(endereco);
             manager.merge(usuario1);
+            transaction.commit();
         }catch (Exception e) {
             e.printStackTrace();
             if (manager.isOpen()) {
@@ -85,13 +86,12 @@ public class Dao {
                 manager.close();
             }
         }
-        System.exit(0);
     }
 
     public Endereco buscarEnderecoPeloCep (Integer cep) {
         Endereco enderecoEncontrado;
-        String jpql = "select endereco from Endereco endereco" +" where endereco.cep= ?1";
-        enderecoEncontrado = manager.createQuery(jpql,Endereco.class)
+        String jpql = "select endereco from Endereco endereco where endereco.cep= ?1";
+        enderecoEncontrado = manager.createQuery(jpql, Endereco.class)
                 .setParameter(1,cep)
                 .getSingleResult();
         return enderecoEncontrado;
@@ -122,12 +122,11 @@ public class Dao {
                 manager.close();
             }
         }
-        System.exit(0);
     }
 
     public List<AvaliacaoAmigos> buscaAvaliacaoAmigosPeloId (Integer id) {
         List<AvaliacaoAmigos> avaliacaoEncontrada;
-        String jpql = "select avaliacao from AvaliacaoAmigos avaliacao" +" where avaliacao.avaliado.id= ?1";
+        String jpql = "select avaliacao from AvaliacaoAmigos avaliacao where avaliacao.avaliado.id= ?1";
         avaliacaoEncontrada = manager.createQuery(jpql,AvaliacaoAmigos.class)
                 .setParameter(1, id)
                 .getResultList();
@@ -136,7 +135,7 @@ public class Dao {
 
     public List<AvaliacaoHospedeiroxhospede> buscaAvaliacaoHospedeiroxHospedePeloId (Integer id) {
         List<AvaliacaoHospedeiroxhospede> avaliacaoEncontrada;
-        String jpql = "select avaliacao from AvaliacaoHospedeiroxhospede avaliacao" +" where avaliacao.avaliado.id= ?1";
+        String jpql = "select avaliacao from AvaliacaoHospedeiroxhospede avaliacao where avaliacao.avaliado.id= ?1";
         avaliacaoEncontrada = manager.createQuery(jpql,AvaliacaoHospedeiroxhospede.class)
                 .setParameter(1, id)
                 .getResultList();
@@ -145,7 +144,7 @@ public class Dao {
 
     public List<AvaliacaoHospedexhospedeiro> buscaAvaliacaoHospedexHospedeiroPeloId (Integer id) {
         List<AvaliacaoHospedexhospedeiro> avaliacaoEncontrada;
-        String jpql = "select avaliacao from AvaliacaoHospedexhospedeiro avaliacao" +" where avaliacao.avaliado.id= ?1";
+        String jpql = "select avaliacao from AvaliacaoHospedexhospedeiro avaliacao where avaliacao.avaliado.id= ?1";
         avaliacaoEncontrada = manager.createQuery(jpql,AvaliacaoHospedexhospedeiro.class)
                 .setParameter(1, id)
                 .getResultList();
@@ -154,7 +153,7 @@ public class Dao {
 
     public List<AvaliacaoOrganizadorxparticipante> buscaAvaliacaoOrganizadorxParticipantePeloId (Integer id) {
         List<AvaliacaoOrganizadorxparticipante> avaliacaoEncontrada;
-        String jpql = "select avaliacao from AvaliacaoOrganizadorxparticipante avaliacao" +" where avaliacao.avaliado.id= ?1";
+        String jpql = "select avaliacao from AvaliacaoOrganizadorxparticipante avaliacao where avaliacao.avaliado.id= ?1";
         avaliacaoEncontrada = manager.createQuery(jpql,AvaliacaoOrganizadorxparticipante.class)
                 .setParameter(1, id)
                 .getResultList();
@@ -163,14 +162,14 @@ public class Dao {
 
     public List<AvaliacaoParticipantexorganizador> buscaAvaliacaoParticipantexOrganizadorPeloId (Integer id) {
         List<AvaliacaoParticipantexorganizador> avaliacaoEncontrada;
-        String jpql = "select avaliacao from AvaliacaoParticipantexorganizador avaliacao" +" where avaliacao.avaliado.id= ?1";
+        String jpql = "select avaliacao from AvaliacaoParticipantexorganizador avaliacao where avaliacao.avaliado.id= ?1";
         avaliacaoEncontrada = manager.createQuery(jpql,AvaliacaoParticipantexorganizador.class)
                 .setParameter(1, id)
                 .getResultList();
         return avaliacaoEncontrada;
     }
 
-    public List<Usuario> buscaUsuarioPorLocalidade (String cidade, String pais) {
+    public List<Usuario> buscaUsuarioPorLocalidade (String pais, String cidade) {
         List<Usuario> usuarioList;
         String jpql = "select usuario from Usuario usuario" +
                 " where usuario.endereco.pais = ?1 and usuario.endereco.cidade = ?2 and usuario.hospedeiro = ?3";
@@ -207,7 +206,7 @@ public class Dao {
         String jpql = "select hospedagem from Hospedagem hospedagem where hospedagem.requisicao = ?1" +
                 " and hospedagem.hospedeiro.id = ?2";
         listUsuario = manager.createQuery(jpql, Hospedagem.class)
-                .setParameter(1, false)
+                .setParameter(1, true)
                 .setParameter(2, id)
                 .getResultList();
         return  listUsuario;
@@ -231,4 +230,14 @@ public class Dao {
         manager.getTransaction().commit();
     }
 
+    public List<Usuario> buscaPorEsporte (String esporte) {
+        List<Usuario> listUsuarios;
+        String jpql = "select usuario from Usuario usuario " +
+                "where usuario.esporte_fav = ?1 and usuario.hospedeiro = ?2";
+        listUsuarios = manager.createQuery(jpql, Usuario.class)
+                .setParameter(1, esporte)
+                .setParameter(2, true)
+                .getResultList();
+        return listUsuarios;
+    }
 }

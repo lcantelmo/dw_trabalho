@@ -8,6 +8,7 @@
 <%Usuario usuario = (Usuario) session.getAttribute("perfilAmigo");
     Endereco endereco = usuario.getEndereco();%>
 <head>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Couch&Running</title>
 </head>
 <body>

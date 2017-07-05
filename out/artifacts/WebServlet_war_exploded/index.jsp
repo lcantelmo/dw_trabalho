@@ -2,9 +2,7 @@
 <%@ page import="java.util.List" %>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
-<%--
-- Clientes não poderão comprar passagens no mesmo dia
---%>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 
 <html>

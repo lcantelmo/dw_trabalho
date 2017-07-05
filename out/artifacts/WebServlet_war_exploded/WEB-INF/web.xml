@@ -51,10 +51,29 @@
 
     <servlet>
         <servlet-name>cadastroServlet</servlet-name>
-        <servlet-class>br.com.uff.controller.cadastro</servlet-class>
+        <servlet-class>br.com.uff.controller.Cadastro</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>cadastroServlet</servlet-name>
         <url-pattern>/cadastro</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>buscaHospedagemServlet</servlet-name>
+        <servlet-class>br.com.uff.controller.BuscaHospedagem</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>buscaHospedagemServlet</servlet-name>
+        <url-pattern>/buscaHospedagem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>buscaPorEsporteServlet</servlet-name>
+        <servlet-class>br.com.uff.controller.BuscaPorEsporte</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>buscaPorEsporteServlet</servlet-name>
+        <url-pattern>/buscaPorEsporte</url-pattern>
+    </servlet-mapping>
+
 </web-app>
