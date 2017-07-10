@@ -2,21 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8cd2a5-1910-47ad-8127-48c91ef1f59e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Cadastro.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Cadastro.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/CSS/style.css" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/CSS/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/listaHospedes.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/listaHospedes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilAmigo.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilAmigo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilLogado.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilLogado.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/usuariosPorEsporte.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/usuariosPorEsporte.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" afterPath="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/CSS/style.css" afterPath="$PROJECT_DIR$/web/CSS/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/listaHospedes.jsp" afterPath="$PROJECT_DIR$/web/listaHospedes.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/perfilAmigo.jsp" afterPath="$PROJECT_DIR$/web/perfilAmigo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/perfilLogado.jsp" afterPath="$PROJECT_DIR$/web/perfilLogado.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/usuariosPorEsporte.jsp" afterPath="$PROJECT_DIR$/web/usuariosPorEsporte.jsp" />
     </list>
     <ignored path="financas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -1234,7 +1220,7 @@
       <workItem from="1499256762570" duration="4637000" />
       <workItem from="1499263607224" duration="2845000" />
       <workItem from="1499279033595" duration="5411000" />
-      <workItem from="1499722023323" duration="5980000" />
+      <workItem from="1499722023323" duration="6028000" />
     </task>
     <task id="LOCAL-00001" summary="Meu Carrinho OK">
       <created>1481472822955</created>
@@ -1306,11 +1292,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499202505229</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="CSS Editado. Criação do Header para as páginas.">
+      <created>1499728074267</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1499728074267</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="578075000" />
+    <option name="totallyTimeSpent" value="578123000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1419,7 +1412,8 @@
     <MESSAGE value="JSP do cadastro finalizada.&#10;Alterações no DAO para buscar e setar Endereços no BD.&#10;Início da criação do Servlet de cadastro." />
     <MESSAGE value="Dao modificado" />
     <MESSAGE value="Busca por Esporte;&#10;Busca por País/Cidade;&#10;style.css" />
-    <option name="LAST_COMMIT_MESSAGE" value="Busca por Esporte;&#10;Busca por País/Cidade;&#10;style.css" />
+    <MESSAGE value="CSS Editado. Criação do Header para as páginas." />
+    <option name="LAST_COMMIT_MESSAGE" value="CSS Editado. Criação do Header para as páginas." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
