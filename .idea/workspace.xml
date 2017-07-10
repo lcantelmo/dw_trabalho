@@ -1,51 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a8cd2a5-1910-47ad-8127-48c91ef1f59e" name="Default" comment="Busca por Esporte;&#10;Busca por País/Cidade;&#10;style.css">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/_metadata_/metadata" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/_metadata_/metadata.keystream" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/_metadata_/metadata.keystream.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/_metadata_/metadata.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/_metadata_/metadata.values.at" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/_metadata_/metadata_i" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/_metadata_/metadata_i.len" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/_src_/schema/sys.zip" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/BuscaHospedagem.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/BuscaPorEsporte.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Cadastro.class" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/CSS/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/listaHospedes.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/usuariosPorEsporte.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/uff/controller/BuscaHospedagem.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/br/com/uff/controller/BuscaPorEsporte.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/CSS/style.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/listaHospedes.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/usuariosPorEsporte.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/br/com/uff/controller/cadastro.java" afterPath="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/br/com/uff/controller/Home.class" afterPath="$PROJECT_DIR$/bin/br/com/uff/controller/Home.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/br/com/uff/model/Endereco.class" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/Endereco.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/br/com/uff/service/Dao.class" afterPath="$PROJECT_DIR$/bin/br/com/uff/service/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Home.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Home.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/model/Endereco.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/model/Endereco.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/service/Dao.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/service/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf.xml" />
+    <list default="true" id="8a8cd2a5-1910-47ad-8127-48c91ef1f59e" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Cadastro.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Cadastro.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/CSS/style.css" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/CSS/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/listaHospedes.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/listaHospedes.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilAmigo.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilAmigo.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilLogado.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilLogado.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/model/Endereco.java" afterPath="$PROJECT_DIR$/src/br/com/uff/model/Endereco.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" afterPath="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/usuariosPorEsporte.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/usuariosPorEsporte.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" afterPath="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/CSS/style.css" afterPath="$PROJECT_DIR$/web/CSS/style.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/index.jsp" afterPath="$PROJECT_DIR$/web/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/listaHospedes.jsp" afterPath="$PROJECT_DIR$/web/listaHospedes.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/perfilAmigo.jsp" afterPath="$PROJECT_DIR$/web/perfilAmigo.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/perfilLogado.jsp" afterPath="$PROJECT_DIR$/web/perfilLogado.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/usuariosPorEsporte.jsp" afterPath="$PROJECT_DIR$/web/usuariosPorEsporte.jsp" />
     </list>
     <ignored path="financas.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/bin/" />
     <ignored path=".idea/dataSources.local.xml" />
+    <ignored path="C:\Users\leo_c\Documents\Faculdade\S.I\8 - Des. Web\Trabalho\dw_trabalho_git\dw_trabalho\.idea\shelf/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -90,6 +67,24 @@
         <option name="myItemId" value="dw_trabalho" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="usuario" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="dw_trabalho" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -98,50 +93,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="listaHospedes.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/listaHospedes.jsp">
+      <file leaf-file-name="Cadastro.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
+            <state relative-caret-position="68">
+              <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Dao.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/uff/service/Dao.java">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="130">
-              <caret line="57" column="56" lean-forward="false" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="perfilLogado.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/perfilLogado.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-386">
-              <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-              <folding>
-                <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#table#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuscaPorEsporte.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/BuscaPorEsporte.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
+            <state relative-caret-position="-85">
+              <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -150,48 +116,8 @@
       <file leaf-file-name="perfilAmigo.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/perfilAmigo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Cadastro.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="77" column="16" lean-forward="false" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="BuscaHospedagem.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/BuscaHospedagem.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="HttpServlet.class" pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/http/HttpServlet.class">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Perfil.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Perfil.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
-              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+            <state relative-caret-position="194">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -200,8 +126,48 @@
       <file leaf-file-name="usuariosPorEsporte.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/usuariosPorEsporte.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="121">
-              <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
+            <state relative-caret-position="204">
+              <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listaHospedes.jsp" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/listaHospedes.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perfilLogado.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/perfilLogado.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="16" column="8" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="20" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="cadastro.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/cadastro.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-52">
+              <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/CSS/style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="945">
+              <caret line="130" column="16" lean-forward="false" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -220,10 +186,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>isEm</find>
-      <find>designForm</find>
-      <find>passa</find>
-      <find>font</find>
       <find>r&gt;</find>
       <find>dao</find>
       <find>poltronaPassageiro</find>
@@ -250,6 +212,10 @@
       <find>alfradiq</find>
       <find>alfradique</find>
       <find>login.jsp</find>
+      <find>body</find>
+      <find>main</find>
+      <find>th</find>
+      <find>tr</find>
     </findStrings>
     <replaceStrings>
       <replace>manager</replace>
@@ -353,18 +319,18 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/listaReqHospede.jsp" />
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/BuscaHospedagem.java" />
         <option value="$PROJECT_DIR$/web/style.css" />
-        <option value="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" />
-        <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/src/br/com/uff/model/Endereco.java" />
-        <option value="$PROJECT_DIR$/web/perfilAmigo.jsp" />
-        <option value="$PROJECT_DIR$/web/CSS/style.css" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/BuscaPorEsporte.java" />
-        <option value="$PROJECT_DIR$/web/perfilLogado.jsp" />
-        <option value="$PROJECT_DIR$/web/listaHospedes.jsp" />
-        <option value="$PROJECT_DIR$/web/usuariosPorEsporte.jsp" />
         <option value="$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/http/HttpServlet.class" />
+        <option value="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" />
+        <option value="$PROJECT_DIR$/web/index.jsp" />
+        <option value="$PROJECT_DIR$/web/CSS/style.css" />
+        <option value="$PROJECT_DIR$/web/perfilLogado.jsp" />
+        <option value="$PROJECT_DIR$/web/perfilAmigo.jsp" />
+        <option value="$PROJECT_DIR$/web/usuariosPorEsporte.jsp" />
+        <option value="$PROJECT_DIR$/web/listaHospedes.jsp" />
       </list>
     </option>
   </component>
@@ -427,26 +393,25 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -456,11 +421,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -474,11 +439,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -492,11 +457,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -510,11 +475,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -532,11 +497,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -554,11 +519,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -576,11 +541,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -599,6 +564,7 @@
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -616,8 +582,12 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="br.com.uff.model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leo_c\Documents\Faculdade\S.I\8 - Des. Web\Trabalho\dw_trabalho_git\dw_trabalho\web\CSS" />
+      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web" />
+      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web\WEB-INF" />
+      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web\CSS" />
+      <recent name="C:\Users\pedro.lohmann\Documents\projetos\Trabalho-Desenv. Web\trabalho-dw\web\assets\plugins" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vitor\Documents\dw\trabalho-dw-20170522T185617Z-001\trabalho-dw\web\fotos" />
@@ -633,12 +603,8 @@
       <recent name="br.com.uff.service" />
       <recent name="br.com.uff" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web" />
-      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web\WEB-INF" />
-      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web\CSS" />
-      <recent name="C:\Users\pedro.lohmann\Documents\projetos\Trabalho-Desenv. Web\trabalho-dw\web\assets\plugins" />
-      <recent name="C:\Users\pedro.lohmann\Documents\projetos\Trabalho-Desenv. Web\Terça-Feira(06-12)\trabalho-dw\web\assets\img" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.uff.model" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1268,6 +1234,7 @@
       <workItem from="1499256762570" duration="4637000" />
       <workItem from="1499263607224" duration="2845000" />
       <workItem from="1499279033595" duration="5411000" />
+      <workItem from="1499722023323" duration="5980000" />
     </task>
     <task id="LOCAL-00001" summary="Meu Carrinho OK">
       <created>1481472822955</created>
@@ -1343,7 +1310,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="571717000" />
+    <option name="totallyTimeSpent" value="578075000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1365,22 +1332,22 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15355521" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1522694" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39039665" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2888889" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2888889" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26837608" sideWeight="0.76626325" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1897436" sideWeight="0.76475036" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.340694" sideWeight="0.76475036" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32123798" sideWeight="0.5532359" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18532526" sideWeight="0.44676408" order="0" side_tool="false" content_ui="combo" x="951" y="125" width="364" height="434" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1852123" sideWeight="0.44676408" order="0" side_tool="false" content_ui="combo" x="951" y="125" width="364" height="434" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1465,19 +1432,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/console.sql" />
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.amizade">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/bin/br/com/uff/model/Amizade.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1652,168 +1606,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo_usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.fotos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.hospedagem">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.endereco">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo_usuario" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.fotos" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.hospedagem" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.endereco" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.usuario" />
     <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Logout.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoamigos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedeiroxhospede">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedexhospedeiro">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoparticipantexorganizador">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/CSS/style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="16" lean-forward="true" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/cadastro.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoamigos" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedeiroxhospede" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedexhospedeiro" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoparticipantexorganizador" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo" />
     <entry file="file://$PROJECT_DIR$/web/login.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -1822,28 +1631,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/perfilLogado.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-386">
-          <caret line="6" column="65" lean-forward="true" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-          <folding>
-            <element signature="n#table#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#table#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#table#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#table#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#table#4;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#table#5;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#form#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Perfil.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1851,7 +1642,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="149">
           <caret line="56" column="19" lean-forward="false" selection-start-line="56" selection-start-column="19" selection-end-line="56" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1859,7 +1649,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="23" column="73" lean-forward="false" selection-start-line="23" selection-start-column="73" selection-end-line="23" selection-end-column="73" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1867,31 +1656,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="21" column="12" lean-forward="false" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/listaHospedes.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="21" column="41" lean-forward="false" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/usuariosPorEsporte.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="22" column="41" lean-forward="false" selection-start-line="22" selection-start-column="41" selection-end-line="22" selection-end-column="41" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/perfilAmigo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="53" column="5" lean-forward="false" selection-start-line="53" selection-start-column="5" selection-end-line="53" selection-end-column="5" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1899,14 +1663,85 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="57" column="56" lean-forward="false" selection-start-line="57" selection-start-column="56" selection-end-line="57" selection-end-column="56" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="121">
-          <caret line="77" column="16" lean-forward="false" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
+        <state relative-caret-position="68">
+          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/CSS/bio.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-459">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/CSS/site.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="137" column="4" lean-forward="false" selection-start-line="137" selection-start-column="0" selection-end-line="137" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/CSS/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="945">
+          <caret line="130" column="16" lean-forward="false" selection-start-line="130" selection-start-column="16" selection-end-line="130" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/cadastro.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-52">
+          <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="4" column="0" lean-forward="true" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/perfilAmigo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="194">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/usuariosPorEsporte.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/perfilLogado.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="16" column="8" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="20" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/listaHospedes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="49" lean-forward="true" selection-start-line="7" selection-start-column="49" selection-end-line="7" selection-end-column="49" />
           <folding />
         </state>
       </provider>

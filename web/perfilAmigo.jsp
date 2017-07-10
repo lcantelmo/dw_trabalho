@@ -11,6 +11,16 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Couch&Running</title>
 </head>
+
+<%Usuario usuario2 = (Usuario) session.getAttribute("usuarioLogado");
+    Endereco endereco2 = usuario.getEndereco();%>
+
+<header>
+    <div id="emailHeader"><%out.print(usuario2.getEmail());%></div>
+    <div id="logoSiteHeader"><a href="perfilLogado.jsp">Couch & Running</a></div>
+    <div id="sairHeader"><a href="index.jsp">sair</a></div>
+</header>
+
 <body>
 
 <h1><%out.println(usuario.getNome());%></h1>

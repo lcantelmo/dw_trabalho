@@ -7,6 +7,14 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Lista de Disponiveis por Esporte</title>
 </head>
+<%Usuario usuario2 = (Usuario) session.getAttribute("usuarioLogado");%>
+
+<header>
+    <div id="emailHeader"><%out.print(usuario2.getEmail());%></div>
+    <div id="logoSiteHeader"><a href="perfilLogado.jsp">Couch & Running</a></div>
+    <div id="sairHeader"><a href="index.jsp">sair</a></div>
+</header>
+
 <body>
 <div id="mystyle">
     <table>

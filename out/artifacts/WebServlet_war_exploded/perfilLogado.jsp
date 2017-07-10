@@ -10,13 +10,20 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Couch&Running - Home</title>
 </head>
+
+<%Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
+    Endereco endereco = usuario.getEndereco();%>
+
+<header>
+    <div id="emailHeader"><%out.print(usuario.getEmail());%></div>
+    <div id="logoSiteHeader"><a href="perfilLogado.jsp">Couch & Running</a></div>
+    <div id="sairHeader"><a href="index.jsp">sair</a></div>
+</header>
+
 <body>
 <div id="mystyle">
-    <%Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
-      Endereco endereco = usuario.getEndereco();%>
+    <img id="fotoPerfil" src="fotos/<%out.println(usuario.getFoto_perfil());%>">
     <h1><%out.println(usuario.getNome());%></h1>
-    <img src="fotos/<%out.println(usuario.getFoto_perfil());%>">
-    <br>
     <h2>Dados Pessoais:</h2>
     <p>E-mail: <%out.println(usuario.getEmail()); %></p>
     <p>Data de Nascimento: <%out.println(usuario.getData_nascimento()); %></p>
@@ -45,9 +52,9 @@
             <td><img src="fotos/<%out.println(avaliador.getFoto_perfil());%>"></td>
             <td><a href="perfil?id=<%out.println(avaliador.getId());%>"><%out.println(avaliador.getNome());%></a></td>
             <br>
-            <td>Descrição: <%out.println(a.getDescricao());%></td>
+            <td><%out.println(a.getDescricao());%></td>
             <br>
-            <td>Nota: <%out.println(a.getNota());%></td>
+            <td><%out.println(a.getNota());%></td>
         </tr>
         <%}%>
         </tbody>
@@ -173,9 +180,7 @@
             <td><img src="fotos/<%out.println(avaliadorParticipante.getFoto_perfil());%>"></td>
             <td><a href="perfil?id=<%out.println(avaliadorParticipante.getId());%>"><%
                 out.println(avaliadorParticipante.getNome());%></a></td>
-            <br>
             <td>Descrição: <%out.println(a.getDescricao());%></td>
-            <br>
             <td>Nota: <%out.println(a.getNota());%></td>
         </tr>
         <%}%>
@@ -211,10 +216,10 @@
     <h4>Busca por localidade:</h4>
     <form action="buscaHospedagem" method="post">
         <label for="pais">País</label>
-        <input type="text" name="pais" id="pais">
+        <input type="text" name="pais" id="pais" required>
 
         <label for="cidade">Cidade</label>
-        <input type="text" name="cidade" id="cidade">
+        <input type="text" name="cidade" id="cidade" required>
 
         <button type='submit'>Buscar</button>
     </form>
@@ -222,7 +227,7 @@
     <h4>Busca por Esporte:</h4>
     <form action="buscaPorEsporte" method="post">
         <label for="esporte">Esporte</label>
-        <input type="text" name="esporte" id="esporte">
+        <input type="text" name="esporte" id="esporte" required>
 
         <button type='submit'>Buscar</button>
     </form>

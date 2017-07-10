@@ -19,7 +19,7 @@
             <div class="header-description gridContainer">
                 <div class="row header-description-row">
                     <div class="header-content header-content-right">
-                        <h1 data-text-effect="" class="heading8" style="opacity: 1; text-align:center;">PROGRAMA DE SENSENVOLVIMENTO WEB</h1>
+                        <h1 data-text-effect="" class="heading8" style="opacity: 1; text-align:center;">PROGRAMA DE DENSENVOLVIMENTO WEB</h1>
                         <p data-text-effect="" class="header-subtitle" style="opacity: 1;  text-align:center;">Programa desenvolvido por Hugo, Leonardo, Vitor e Patrick</p>
                         <div style="text-align:center;"><button><a class="button blue big hp-header-primary-button" style="text-decoration:none; color:#000;" href="login.jsp">LOGAR</a></button>
                             <button><a class="button green big hp-header-secondary-button" style="text-decoration:none; color:#000;" href="cadastro.jsp">REGISTRAR</a></button></div>
