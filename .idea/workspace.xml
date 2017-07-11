@@ -1,21 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8a8cd2a5-1910-47ad-8127-48c91ef1f59e" name="Default" comment="">
+    <list default="true" id="8a8cd2a5-1910-47ad-8127-48c91ef1f59e" name="Default" comment="AvaliarHospedeHospeiro">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/br/com/uff/service/Dao.class" afterPath="$PROJECT_DIR$/bin/br/com/uff/service/Dao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/br/com/uff/util/PopularBanco.class" afterPath="$PROJECT_DIR$/bin/br/com/uff/util/PopularBanco.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/model/Hospedagem.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/model/Hospedagem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/service/Dao.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/service/Dao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/util/PopularBanco.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/util/PopularBanco.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilLogado.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/perfilLogado.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/controller/Home.java" afterPath="$PROJECT_DIR$/src/br/com/uff/controller/Home.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java" afterPath="$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" afterPath="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/util/PopularBanco.java" afterPath="$PROJECT_DIR$/src/br/com/uff/util/PopularBanco.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/perfilLogado.jsp" afterPath="$PROJECT_DIR$/web/perfilLogado.jsp" />
     </list>
     <ignored path="financas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -133,8 +122,8 @@
       <file leaf-file-name="AvaliarHospedeHospedeiro.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/AvaliarHospedeHospedeiro.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+            <state relative-caret-position="88">
+              <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -1279,7 +1268,7 @@
       <workItem from="1499736720430" duration="3820000" />
       <workItem from="1499796341811" duration="10361000" />
       <workItem from="1499809536444" duration="1672000" />
-      <workItem from="1499811570076" duration="5570000" />
+      <workItem from="1499811570076" duration="5653000" />
     </task>
     <task id="LOCAL-00001" summary="Meu Carrinho OK">
       <created>1481472822955</created>
@@ -1358,11 +1347,18 @@
       <option name="project" value="LOCAL" />
       <updated>1499728074267</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="AvaliarHospedeHospeiro">
+      <created>1499817238212</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1499817238212</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="599546000" />
+    <option name="totallyTimeSpent" value="599629000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1473,7 +1469,8 @@
     <MESSAGE value="Dao modificado" />
     <MESSAGE value="Busca por Esporte;&#10;Busca por País/Cidade;&#10;style.css" />
     <MESSAGE value="CSS Editado. Criação do Header para as páginas." />
-    <option name="LAST_COMMIT_MESSAGE" value="CSS Editado. Criação do Header para as páginas." />
+    <MESSAGE value="AvaliarHospedeHospeiro" />
+    <option name="LAST_COMMIT_MESSAGE" value="AvaliarHospedeHospeiro" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1915,8 +1912,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/AvaliarHospedeHospedeiro.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="36" column="38" lean-forward="true" selection-start-line="36" selection-start-column="38" selection-end-line="36" selection-end-column="38" />
+        <state relative-caret-position="88">
+          <caret line="31" column="0" lean-forward="true" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
