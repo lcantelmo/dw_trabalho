@@ -100,10 +100,10 @@ public class Dao {
             hospedagem1.setHospedeiro(hospedeiroInformado);
             hospedagem1.setPraticamSurf(qtdPraticamSurfInformado);
             hospedagem1.setViajantes(qtdViajantesInformado);
-            hospedagem1.setMensagem(Mensagem);
+            //hospedagem1.setMensagem(Mensagem);
             hospedagem1.setDataInicial(dataInicial);
             hospedagem1.setDataFinal(dataFinal);
-            hospedagem1.setAceitar(false);
+           // hospedagem1.setAceitar(false);
             manager.merge(hospedagem1);
             transaction.commit();
         }catch (Exception e) {
@@ -281,4 +281,39 @@ public class Dao {
         query.executeUpdate();
         manager.getTransaction().commit();
     }
+
+    public List<Hospedagem> buscaHospedagemFeita (Integer id) {
+        List<Hospedagem> listUsuario;
+        String jpql = "select hospedagem from Hospedagem hospedagem where hospedagem.requisicao = ?1" +
+                " and hospedagem.hospedeiro.id = ?2";
+        listUsuario = manager.createQuery(jpql, Hospedagem.class)
+                .setParameter(1, true)
+                .setParameter(2, id)
+                .getResultList();
+        return  listUsuario;
+    }
+
+    public Hospedagem buscarHospedagemId (Integer id) {
+        Hospedagem hospedagemEncontrada;
+        String jpql = "select hospedagem from Hospedagem hospedagem where hospedagem.id= ?1";
+        hospedagemEncontrada = manager.createQuery(jpql,Hospedagem.class)
+                .setParameter(1,id)
+                .getSingleResult();
+        return hospedagemEncontrada;
+    }
+
+    public void insereAvaliacaoHospedeiroxHospede (Usuario avaliador, Usuario avaliado, String descricao,
+                                                   Integer nota) {
+        manager.getTransaction().begin();
+        AvaliacaoHospedeiroxhospede avaliacaoHospedeiroxhospede = new AvaliacaoHospedeiroxhospede();
+        avaliacaoHospedeiroxhospede.setAvaliado(avaliado);
+        avaliacaoHospedeiroxhospede.setAvaliador(avaliador);
+        avaliacaoHospedeiroxhospede.setDescricao(descricao);
+        avaliacaoHospedeiroxhospede.setNota(nota);
+        avaliacaoHospedeiroxhospede.setPublicar(true);
+        manager.merge(avaliacaoHospedeiroxhospede);
+        manager.getTransaction().commit();
+    }
+
+
 }

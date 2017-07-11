@@ -21,6 +21,26 @@ public class Hospedagem {
 
     private boolean requisicao;
 
+    public boolean isAvaliacaoHospedeiroxHospede() {
+        return avaliacaoHospedeiroxHospede;
+    }
+
+    public void setAvaliacaoHospedeiroxHospede(boolean avaliacaoHospedeiroxHospede) {
+        this.avaliacaoHospedeiroxHospede = avaliacaoHospedeiroxHospede;
+    }
+
+    public boolean isAvaliacaoHospedexHospedeiro() {
+        return avaliacaoHospedexHospedeiro;
+    }
+
+    public void setAvaliacaoHospedexHospedeiro(boolean avaliacaoHospedexHospedeiro) {
+        this.avaliacaoHospedexHospedeiro = avaliacaoHospedexHospedeiro;
+    }
+
+    private boolean avaliacaoHospedeiroxHospede;
+
+    private boolean avaliacaoHospedexHospedeiro;
+
     @Temporal(TemporalType.DATE)
     private Date dataInicial;
 

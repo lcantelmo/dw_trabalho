@@ -188,6 +188,41 @@
         </tbody>
     </table>
 
+    <h4>Lista de Hospedagens Realizadas como hospede:</h4>
+    <table>
+        <thead>
+        <tr>
+            <th>Foto</th>
+            <th>Nome</th>
+            <th>Requsição</th>
+        </tr>
+        </thead>
+        <tbody>
+        <%
+            List<Hospedagem> listHopedagemFeita
+                    = (List<Hospedagem>) session.getAttribute("listHopedagemFeita");
+            Usuario hospede1;
+
+            for (Hospedagem a : listHopedagemFeita) {
+                hospede1 = a.getHospede();
+
+        %>
+        <tr>
+            <td><img src="fotos/<%out.println(hospede1.getFoto_perfil());%>"></td>
+            <td><a href="perfil?id=<%out.println(hospede1.getId());%>"><%out.println(hospede1.getNome());%></a></td>
+            <td>
+                <form action="avaliarHospedeHospedeiro" method="post">
+                    <input type="hidden" name="hospedagemId" id="hospedagemId" value="<%=a.getId()%>">
+                    <input type="text" name="descricao" id="descricao"/>
+                    <input type="number" name="nota" id="nota"/>
+                    <button type="submit">Enviar</button>
+                </form>
+            </td>
+        </tr>
+        <%}%>
+        </tbody>
+    </table>
+
     <h4>Lista de Requisições de Hospedagem:</h4>
     <table>
         <thead>
