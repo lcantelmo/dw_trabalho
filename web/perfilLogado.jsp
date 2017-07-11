@@ -1,5 +1,6 @@
 <%@ page import="java.util.List" %>
 <%@ page import="br.com.uff.model.*" %>
+<%@ page import="br.com.uff.service.Dao" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -17,7 +18,7 @@
 <header>
     <div id="emailHeader"><%out.print(usuario.getEmail());%></div>
     <div id="logoSiteHeader"><a href="perfilLogado.jsp">Couch & Running</a></div>
-    <div id="sairHeader"><a href="index.jsp">sair</a></div>
+    <div id="sairHeader"><a href="logout.jsp">sair</a></div>
 </header>
 
 <body>
@@ -193,6 +194,7 @@
         <tr>
             <th>Foto</th>
             <th>Nome</th>
+            <th>Requsição</th>
         </tr>
         </thead>
         <tbody>
@@ -208,10 +210,19 @@
         <tr>
             <td><img src="fotos/<%out.println(hospede.getFoto_perfil());%>"></td>
             <td><a href="perfil?id=<%out.println(hospede.getId());%>"><%out.println(hospede.getNome());%></a></td>
+            <td>
+                <form action="atualizaReq" method="post">
+                    <input type="hidden" name="hospedeReqId" id="hospedeReqId" value="<%=hospede.getId()%>">
+                    <input type="hidden" name="hospedeiroId" id="hospedeiroId" value="<%=usuario.getId()%>">
+                    <button type="submit">Aceitar</button>
+                </form>
+            </td>
         </tr>
         <%}%>
         </tbody>
     </table>
+
+    <h4>Convocação:</h4>
 
     <h4>Busca por localidade:</h4>
     <form action="buscaHospedagem" method="post">

@@ -9,25 +9,23 @@ public class Hospedagem {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private Integer id;
 
-    @ManyToOne
+    @OneToOne
     private Usuario hospedeiro;
 
-    @ManyToOne
+    @OneToOne
     private Usuario hospede;
 
     private Integer qtdViajantes;
 
     private Integer qtdPraticamSurf;
 
-    private String mensagem;
+    private boolean requisicao;
 
     @Temporal(TemporalType.DATE)
     private Date dataInicial;
 
     @Temporal(TemporalType.DATE)
     private Date dataFinal;
-
-    private boolean aceitar;
 
     public Integer getQtdViajantes() {
         return qtdViajantes;
@@ -53,7 +51,7 @@ public class Hospedagem {
         this.requisicao = requisicao;
     }
 
-    private boolean requisicao = false;
+
 
     public Hospedagem() {
     }
@@ -114,21 +112,7 @@ public class Hospedagem {
         this.qtdPraticamSurf = qtdPraticamSurf;
     }
 
-    public boolean getAceitar() {
-        return aceitar;
-    }
 
-    public void setAceitar(boolean aceitar) {
-        this.aceitar = aceitar;
-    }
-
-    public String getMensagem() {
-        return mensagem;
-    }
-
-    public void setMensagem(String mensagem) {
-        this.mensagem = mensagem;
-    }
 }
 
 

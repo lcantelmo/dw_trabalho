@@ -236,7 +236,7 @@ public class Dao {
         String jpql = "select hospedagem from Hospedagem hospedagem where hospedagem.requisicao = ?1" +
                 " and hospedagem.hospedeiro.id = ?2";
         listUsuario = manager.createQuery(jpql, Hospedagem.class)
-                .setParameter(1, true)
+                .setParameter(1, false)
                 .setParameter(2, id)
                 .getResultList();
         return  listUsuario;
@@ -261,13 +261,24 @@ public class Dao {
     }
 
     public List<Usuario> buscaPorEsporte (String esporte) {
-        List<Usuario> listUsuarios;
-        String jpql = "select usuario from Usuario usuario " +
-                "where usuario.esporte_fav = ?1 and usuario.hospedeiro = ?2";
-        listUsuarios = manager.createQuery(jpql, Usuario.class)
+        return manager.createQuery("select usuario from Usuario usuario " +
+                "where usuario.esporte_fav = ?1 and usuario.hospedeiro = ?2", Usuario.class)
                 .setParameter(1, esporte)
                 .setParameter(2, true)
                 .getResultList();
-        return listUsuarios;
+    }
+
+    public void updateRequisicao (Integer id_hospedeiro, Integer id_hospede) {
+        manager.getTransaction().begin();
+        String jpql = "update Hospedagem hospedagem set hospedagem.requisicao = true " +
+                "where hospedagem.hospede.id = ?1 and hospedagem.hospedeiro.id = ?2";
+        Query query = manager.createQuery(jpql)
+                .setParameter(1,id_hospede)
+                .setParameter(2, id_hospedeiro);
+        System.out.println("HOSPEDE Q"+id_hospede );
+        System.out.println("HOSPEDEiro Q"+id_hospedeiro );
+
+        query.executeUpdate();
+        manager.getTransaction().commit();
     }
 }

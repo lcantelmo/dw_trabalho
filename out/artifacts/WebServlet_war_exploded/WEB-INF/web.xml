@@ -85,4 +85,13 @@
         <url-pattern>/buscaPorEsporte</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>atualizaReqServlet</servlet-name>
+        <servlet-class>br.com.uff.controller.AtualizarReq</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>atualizaReqServlet</servlet-name>
+        <url-pattern>/atualizaReq</url-pattern>
+    </servlet-mapping>
+
 </web-app>
