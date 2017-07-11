@@ -24,7 +24,7 @@
                         <div style="text-align:center;"><button><a class="button blue big hp-header-primary-button" style="text-decoration:none; color:#000;" href="login.jsp">LOGAR</a></button>
                             <button><a class="button green big hp-header-secondary-button" style="text-decoration:none; color:#000;" href="cadastro.jsp">REGISTRAR</a></button></div>
                     </div>
-
+                    <div>${mensagemRetorno}</div>
                 </div>
             </div>
         </div>

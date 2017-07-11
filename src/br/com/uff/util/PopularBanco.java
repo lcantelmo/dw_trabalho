@@ -193,6 +193,7 @@ public class PopularBanco {
             hospedagem1.setViajantes(5);
             hospedagem1.setDataInicial(retornaDataFormatada("2017-01-01"));
             hospedagem1.setDataFinal(retornaDataFormatada("2017-02-01"));
+            hospedagem1.setAceitar(true);
             manager.merge(hospedagem1);
 
             Hospedagem hospedagem2 = new Hospedagem();
@@ -203,6 +204,7 @@ public class PopularBanco {
             hospedagem2.setViajantes(6);
             hospedagem2.setDataInicial(retornaDataFormatada("2017-04-01"));
             hospedagem2.setDataFinal(retornaDataFormatada("2017-06-01"));
+            hospedagem2.setAceitar(true);
             manager.merge(hospedagem2);
 
             Hospedagem hospedagem3 = new Hospedagem();
@@ -213,6 +215,7 @@ public class PopularBanco {
             hospedagem3.setViajantes(2);
             hospedagem3.setDataInicial(retornaDataFormatada("2017-02-11"));
             hospedagem3.setDataFinal(retornaDataFormatada("2017-02-17"));
+            hospedagem3.setAceitar(true);
             manager.merge(hospedagem3);
 
 //            Hospedagem hospedagem = new Hospedagem();

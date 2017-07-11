@@ -88,6 +88,36 @@ public class Dao {
         }
     }
 
+    public void cadastraHospedagem (Usuario hospedeInformado, Usuario hospedeiroInformado, int qtdPraticamSurfInformado,
+                                    int qtdViajantesInformado, Date dataInicial, Date dataFinal, String Mensagem){
+        try {
+            EntityTransaction transaction = manager.getTransaction();
+
+            transaction.begin();
+
+            Hospedagem hospedagem1 = new Hospedagem();
+            hospedagem1.setHospede(hospedeInformado);
+            hospedagem1.setHospedeiro(hospedeiroInformado);
+            hospedagem1.setPraticamSurf(qtdPraticamSurfInformado);
+            hospedagem1.setViajantes(qtdViajantesInformado);
+            hospedagem1.setMensagem(Mensagem);
+            hospedagem1.setDataInicial(dataInicial);
+            hospedagem1.setDataFinal(dataFinal);
+            hospedagem1.setAceitar(false);
+            manager.merge(hospedagem1);
+            transaction.commit();
+        }catch (Exception e) {
+            e.printStackTrace();
+            if (manager.isOpen()) {
+                manager.getTransaction().rollback();
+            }
+        } finally {
+            if (manager.isOpen()) {
+                manager.close();
+            }
+        }
+    }
+
     public Endereco buscarEnderecoPeloCep (Integer cep) {
         Endereco enderecoEncontrado;
         String jpql = "select endereco from Endereco endereco where endereco.cep= ?1";

@@ -19,9 +19,11 @@
     <table>
         <thead>
         <tr>
+            <th>Foto</th>
             <th>Nome</th>
             <th>Esporte Favorito</th>
-            <th>Foto</th>
+            <th></th>
+
         </tr>
         </thead>
         <tbody>
@@ -30,10 +32,18 @@
             for (Usuario usuario : listUsuarios) {
         %>
         <tr>
+            <td><img src="fotos/<%=usuario.getFoto_perfil()%>"></td>
             <td><%=usuario.getNome()%></td>
             <td><%=usuario.getEsporte_fav()%></td>
-            <td><img src="fotos/<%=usuario.getFoto_perfil()%>"></td>
-        </tr>
+            <td>
+                <%System.out.println("Id do Hospedeiro: "+usuario.getId());%>
+                <form action="solicitacaoHospedagem.jsp" method="post">
+                    <input type="hidden" name="hospedeiroID" id="hospedeiroID" value="<%=usuario.getId()%>"/>
+                    <button type="submit">Agendar</button>
+                </form>
+            </td>
+            </tr>
+        </form>
         <%}%>
         </tbody>
     </table>

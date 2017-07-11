@@ -51,7 +51,7 @@ public class Cadastro extends HttpServlet{
         Date data =null;
         System.out.println(nascimentoInformado);
         //Convertendo a string data em Date
-        SimpleDateFormat formato = new SimpleDateFormat("yyyy/MM/dd");
+        SimpleDateFormat formato = new SimpleDateFormat("yyyy-MM-dd");
         try{
             data = formato.parse(nascimentoInformado);
             System.out.println("Converteu a Data");
@@ -76,12 +76,18 @@ public class Cadastro extends HttpServlet{
             //Caso contrário, cadastra o usuário
             try {
                 usuario = dao.buscarUsuarioPeloEmail(emailInformado);
-                System.out.println("Buscou o Usuário");
+                System.out.println("Encontrou o Usuário");
+                request.setAttribute("mensagemRetorno", "O usuário já foi Cadastrado!");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+                dispatcher.forward(request, response);
             }catch (NoResultException e){
                 System.out.println("Não encontrou o Usuário");
                 dao.cadastraUsuario(emailInformado, senhaInformada, nomeInformado, endereco, numeroInformado, complementoInformado,
                         data, "padrao.jpg", esporteInformado, hospedeiro, qntHospedes);
                 System.out.println("Cadastrou o Usuário");
+                request.setAttribute("mensagemRetorno", "Usuário Cadastrado com Sucesso!");
+                RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
+                dispatcher.forward(request, response);
             }
         }catch (NoResultException e){
             //Informa que não pode cadastrar o endereço do usuário

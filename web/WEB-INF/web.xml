@@ -68,6 +68,15 @@
     </servlet-mapping>
 
     <servlet>
+        <servlet-name>solicitaHospedagemServlet</servlet-name>
+        <servlet-class>br.com.uff.controller.SolicitaHospedagem</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>solicitaHospedagemServlet</servlet-name>
+        <url-pattern>/solicitaHospedagem</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
         <servlet-name>buscaPorEsporteServlet</servlet-name>
         <servlet-class>br.com.uff.controller.BuscaPorEsporte</servlet-class>
     </servlet>
