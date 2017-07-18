@@ -179,7 +179,9 @@ public class Dao {
 
     public List<AvaliacaoHospedeiroxhospede> buscaAvaliacaoHospedeiroxHospedePeloId (Integer id) {
         List<AvaliacaoHospedeiroxhospede> avaliacaoEncontrada;
-        String jpql = "select avaliacao from AvaliacaoHospedeiroxhospede avaliacao where avaliacao.avaliado.id= ?1";
+        String jpql = "select avaliacao from AvaliacaoHospedeiroxhospede avaliacao where avaliacao.avaliado.id= ?1" +
+                " and avaliacao.hospedagem.avaliacaoHospedeiroxHospede = true" +
+                " and avaliacao.hospedagem.avaliacaoHospedexHospedeiro = true";
         avaliacaoEncontrada = manager.createQuery(jpql,AvaliacaoHospedeiroxhospede.class)
                 .setParameter(1, id)
                 .getResultList();
@@ -188,7 +190,9 @@ public class Dao {
 
     public List<AvaliacaoHospedexhospedeiro> buscaAvaliacaoHospedexHospedeiroPeloId (Integer id) {
         List<AvaliacaoHospedexhospedeiro> avaliacaoEncontrada;
-        String jpql = "select avaliacao from AvaliacaoHospedexhospedeiro avaliacao where avaliacao.avaliado.id= ?1";
+        String jpql = "select avaliacao from AvaliacaoHospedexhospedeiro avaliacao where avaliacao.avaliado.id= ?1" +
+                " and avaliacao.hospedagem.avaliacaoHospedeiroxHospede = true" +
+                "  and avaliacao.hospedagem.avaliacaoHospedexHospedeiro = true";
         avaliacaoEncontrada = manager.createQuery(jpql,AvaliacaoHospedexhospedeiro.class)
                 .setParameter(1, id)
                 .getResultList();
@@ -296,10 +300,23 @@ public class Dao {
     public List<Hospedagem> buscaHospedagemFeita (Integer id) {
         List<Hospedagem> listUsuario;
         String jpql = "select hospedagem from Hospedagem hospedagem where hospedagem.requisicao = ?1" +
-                " and hospedagem.hospedeiro.id = ?2";
+                " and hospedagem.hospedeiro.id = ?2 and hospedagem.avaliacaoHospedeiroxHospede = ?3";
         listUsuario = manager.createQuery(jpql, Hospedagem.class)
                 .setParameter(1, true)
                 .setParameter(2, id)
+                .setParameter(3, false)
+                .getResultList();
+        return  listUsuario;
+    }
+
+    public List<Hospedagem> buscaHospedagemFeita2 (Integer id) {
+        List<Hospedagem> listUsuario;
+        String jpql = "select hospedagem from Hospedagem hospedagem where hospedagem.requisicao = ?1" +
+                " and hospedagem.hospede.id = ?2 and hospedagem.avaliacaoHospedexHospedeiro = ?3";
+        listUsuario = manager.createQuery(jpql, Hospedagem.class)
+                .setParameter(1, true)
+                .setParameter(2, id)
+                .setParameter(3, false)
                 .getResultList();
         return  listUsuario;
     }
@@ -314,7 +331,7 @@ public class Dao {
     }
 
     public void insereAvaliacaoHospedeiroxHospede (Usuario avaliador, Usuario avaliado, String descricao,
-                                                   Integer nota) {
+                                                    Integer nota, Hospedagem hospedagem) {
         manager.getTransaction().begin();
         AvaliacaoHospedeiroxhospede avaliacaoHospedeiroxhospede = new AvaliacaoHospedeiroxhospede();
         avaliacaoHospedeiroxhospede.setAvaliado(avaliado);
@@ -322,8 +339,32 @@ public class Dao {
         avaliacaoHospedeiroxhospede.setDescricao(descricao);
         avaliacaoHospedeiroxhospede.setNota(nota);
         avaliacaoHospedeiroxhospede.setPublicar(true);
+        avaliacaoHospedeiroxhospede.setHospedagem(hospedagem);
         manager.merge(avaliacaoHospedeiroxhospede);
         manager.getTransaction().commit();
+    }
+
+    public void insereAvaliacaoHospedexHospedeiro (Usuario avaliador, Usuario avaliado, String descricao,
+                                                   Integer nota, Hospedagem hospedagem) {
+        manager.getTransaction().begin();
+        AvaliacaoHospedexhospedeiro avaliacaoHospedexhospedeiro = new AvaliacaoHospedexhospedeiro();
+        avaliacaoHospedexhospedeiro.setAvaliado(avaliado);
+        avaliacaoHospedexhospedeiro.setAvaliador(avaliador);
+        avaliacaoHospedexhospedeiro.setDescricao(descricao);
+        avaliacaoHospedexhospedeiro.setNota(nota);
+        avaliacaoHospedexhospedeiro.setPublicar(true);
+        avaliacaoHospedexhospedeiro.setHospedagem(hospedagem);
+        manager.merge(avaliacaoHospedexhospedeiro);
+        manager.getTransaction().commit();
+    }
+
+    List<EventoEsportivo> listEventos (Integer id) {
+        String jpql = "select evento from EventoEsportivo evento " +
+                "where evento.organizador.id = ?1";
+        List<EventoEsportivo> evento = manager.createQuery(jpql, EventoEsportivo.class)
+                .setParameter(1, id)
+                .getResultList();
+        return  evento;
     }
 
 

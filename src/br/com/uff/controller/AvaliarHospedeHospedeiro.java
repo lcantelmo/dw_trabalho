@@ -27,12 +27,12 @@ public class AvaliarHospedeHospedeiro extends HttpServlet {
         Dao dao = new Dao();
 
         Hospedagem hospedagem = dao.buscarHospedagemId(idHospedagem);
-
+        hospedagem.setAvaliacaoHospedeiroxHospede(true);
         Usuario hospede = (Usuario) session.getAttribute("usuarioLogado");
 
-        Usuario hospedeiro = hospedagem.getHospedeiro();
+        Usuario hospedeiro = hospedagem.getHospede();
 
-        dao.insereAvaliacaoHospedeiroxHospede(hospede, hospedeiro, descricaoInformada, nota);
+        dao.insereAvaliacaoHospedeiroxHospede(hospede, hospedeiro, descricaoInformada, nota, hospedagem);
         RequestDispatcher dispatcher = req.getRequestDispatcher("perfilLogado.jsp");
         dispatcher.forward(req, resp);
     }

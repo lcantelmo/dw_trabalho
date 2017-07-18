@@ -49,6 +49,9 @@ public class Home extends HttpServlet {
             List<Hospedagem> listHopedagemFeita = dao.buscaHospedagemFeita(usuario.getId());
             session.setAttribute("listHopedagemFeita", listHopedagemFeita);
 
+            List<Hospedagem> listHopedagemFeita2 = dao.buscaHospedagemFeita2(usuario.getId());
+            session.setAttribute("listHopedagemFeita2", listHopedagemFeita2);
+
             RequestDispatcher dispatcher = req.getRequestDispatcher("perfilLogado.jsp");
             dispatcher.forward(req, resp);
             }    catch (NoResultException e) {

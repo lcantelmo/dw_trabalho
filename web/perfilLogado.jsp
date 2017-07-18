@@ -185,7 +185,7 @@
         </tbody>
     </table>
 
-    <h4>Lista de Hospedagens Realizadas como hospede:</h4>
+    <h4>Lista de Hospedagens Realizadas como hospedeiro:</h4>
     <table>
         <thead>
         <tr>
@@ -219,6 +219,40 @@
         </tbody>
     </table>
 
+        <h4>Lista de Hospedagens Realizadas como hospede:</h4>
+        <table>
+            <thead>
+            <tr>
+                <th>Foto</th>
+                <th>Nome</th>
+                <th>Descrição</th>
+                <th>Nota</th>
+            </tr>
+            </thead>
+            <tbody>
+            <%
+                List<Hospedagem> listHopedagemFeita2
+                        = (List<Hospedagem>) session.getAttribute("listHopedagemFeita2");
+                Usuario hospede2;
+
+                for (Hospedagem b : listHopedagemFeita2) {
+                    hospede2 = b.getHospedeiro();
+
+            %>
+            <tr>
+                <td><img src="fotos/<%=hospede2.getFoto_perfil()%>"></td>
+                <td><a href="perfil?id=<%=hospede2.getId()%>"><%=hospede2.getNome()%></a></td>
+                <form action="avaliarHospedeiroHospede" method="post">
+                    <input type="hidden" name="hospedagemId" id="hospedagemId" value="<%=b.getId()%>">
+                    <td><input type="text" name="descricao" id="descricao"/></td>
+                    <td><input type="number" name="nota" id="nota"/></td>
+                    <button type="submit">Enviar</button>
+                </form>
+            </tr>
+        <%}%>
+        </tbody>
+    </table>
+
     <h4>Lista de Requisições de Hospedagem:</h4>
     <table>
         <thead>
@@ -234,8 +268,8 @@
                     = (List<Hospedagem>) session.getAttribute("listReqHosp");
             Usuario hospede;
 
-            for (Hospedagem a : listHopedagem) {
-                hospede = a.getHospede();
+            for (Hospedagem c : listHopedagem) {
+                hospede = c.getHospede();
 
         %>
         <tr>
