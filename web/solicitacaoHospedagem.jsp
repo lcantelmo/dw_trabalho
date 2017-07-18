@@ -12,8 +12,10 @@
     <link rel="stylesheet" type="text/css" href="CSS/style.css">
 </head>
 
-<%Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
-String idHospedeiro = request.getParameter("hospedeiroID");%>
+<%
+    Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
+    String idHospedeiro = request.getParameter("hospedeiroID");
+%>
 
 <header>
     <div id="emailHeader"><%out.print(usuario.getEmail());%></div>
@@ -23,7 +25,8 @@ String idHospedeiro = request.getParameter("hospedeiroID");%>
 <body>
 <div id="mystyle">
     <h1>Insira os dados da sua solicitação:</h1>
-    <h2><%=idHospedeiro%></h2>
+    <h2><%=idHospedeiro%>
+    </h2>
     <form action="solicitaHospedagem" method="post">
         <input type="hidden" name="hospedeiroID2" id="hospedeiroID2" value="<%=idHospedeiro%>"/>
         <label for="qtd_viajantes">Quantidade de Hóspedes:</label>

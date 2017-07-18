@@ -33,16 +33,18 @@
         %>
         <tr>
             <td><img src="fotos/<%=usuario.getFoto_perfil()%>"></td>
-            <td><%=usuario.getNome()%></td>
-            <td><%=usuario.getEsporte_fav()%></td>
+            <td><%=usuario.getNome()%>
+            </td>
+            <td><%=usuario.getEsporte_fav()%>
+            </td>
             <td>
-                <%System.out.println("Id do Hospedeiro: "+usuario.getId());%>
+                <%System.out.println("Id do Hospedeiro: " + usuario.getId());%>
                 <form action="solicitacaoHospedagem.jsp" method="post">
                     <input type="hidden" name="hospedeiroID" id="hospedeiroID" value="<%=usuario.getId()%>"/>
                     <button type="submit">Agendar</button>
                 </form>
             </td>
-            </tr>
+        </tr>
         </form>
         <%}%>
         </tbody>

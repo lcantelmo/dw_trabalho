@@ -289,9 +289,6 @@ public class Dao {
         Query query = manager.createQuery(jpql)
                 .setParameter(1,id_hospede)
                 .setParameter(2, id_hospedeiro);
-        System.out.println("HOSPEDE Q"+id_hospede );
-        System.out.println("HOSPEDEiro Q"+id_hospedeiro );
-
         query.executeUpdate();
         manager.getTransaction().commit();
     }

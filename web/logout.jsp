@@ -17,7 +17,7 @@
 %>
 <center>
     <h1>Você foi deslogado com sucesso!</h1>
-    Para logar novamente <a href="index.jsp">click here</a>.
+    Para logar novamente <a href="index.jsp">clique aqui</a>.
 </center>
 </body>
 </html>

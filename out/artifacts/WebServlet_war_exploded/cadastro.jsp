@@ -1,6 +1,7 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
+    <link rel="stylesheet" type="text/css" href="CSS/style.css">
     <title>Cadastro</title>
 </head>
 <script>
@@ -82,6 +83,7 @@
     }
 </script>
 <body>
+<div id="mystyle">
     <h2>Cadastro</h2>
     <form action="cadastro" method="post">
         <label for="email">E-mail:</label>
@@ -136,5 +138,6 @@
         </div>
         <input type="submit" value="Cadastrar">
     </form>
+</div>
 </body>
 </html>

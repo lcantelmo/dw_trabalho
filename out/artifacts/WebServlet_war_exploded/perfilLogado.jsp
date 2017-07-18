@@ -1,6 +1,5 @@
 <%@ page import="java.util.List" %>
 <%@ page import="br.com.uff.model.*" %>
-<%@ page import="br.com.uff.service.Dao" %>
 
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/fmt" prefix="fmt" %>
@@ -12,23 +11,25 @@
     <title>Couch&Running - Home</title>
 </head>
 
-<%Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
-    Endereco endereco = usuario.getEndereco();%>
+<%
+    Usuario usuario = (Usuario) session.getAttribute("usuarioLogado");
+    Endereco endereco = usuario.getEndereco();
+%>
 
 <header>
-    <div id="emailHeader"><%out.print(usuario.getEmail());%></div>
+    <div id="emailHeader"><%=usuario.getEmail()%></div>
     <div id="logoSiteHeader"><a href="perfilLogado.jsp">Couch & Running</a></div>
     <div id="sairHeader"><a href="logout.jsp">sair</a></div>
 </header>
 
 <body>
 <div id="mystyle">
-    <img id="fotoPerfil" src="fotos/<%out.println(usuario.getFoto_perfil());%>">
-    <h1><%out.println(usuario.getNome());%></h1>
+    <img id="fotoPerfil" src="fotos/<%=usuario.getFoto_perfil()%>">
+    <h1><%=usuario.getNome()%></h1>
     <h2>Dados Pessoais:</h2>
-    <p>E-mail: <%out.println(usuario.getEmail()); %></p>
-    <p>Data de Nascimento: <%out.println(usuario.getData_nascimento()); %></p>
-    <p>Esporte Favorito: <%out.println(usuario.getEsporte_fav()); %></p>
+    <p>E-mail: <%=usuario.getEmail()%></p>
+    <p>Data de Nascimento: <%=usuario.getData_nascimento()%></p>
+    <p>Esporte Favorito: <%=usuario.getEsporte_fav()%></p>
 
     <h4>Avaliações de Amigos:</h4>
     <table>
@@ -50,12 +51,12 @@
                 avaliador = a.getAvaliador();
         %>
         <tr>
-            <td><img src="fotos/<%out.println(avaliador.getFoto_perfil());%>"></td>
-            <td><a href="perfil?id=<%out.println(avaliador.getId());%>"><%out.println(avaliador.getNome());%></a></td>
+            <td><img src="fotos/<%=avaliador.getFoto_perfil()%>"></td>
+            <td><a href="perfil?id=<%=avaliador.getId()%>"><%=avaliador.getNome()%></a></td>
             <br>
-            <td><%out.println(a.getDescricao());%></td>
+            <td><%=a.getDescricao()%></td>
             <br>
-            <td><%out.println(a.getNota());%></td>
+            <td><%=a.getNota()%></td>
         </tr>
         <%}%>
         </tbody>
@@ -81,13 +82,12 @@
                 avaliadorHospedeiro = a.getAvaliador();
         %>
         <tr>
-            <td><img src="fotos/<%out.println(avaliadorHospedeiro.getFoto_perfil());%>"></td>
-            <td><a href="perfil?id=<%out.println(avaliadorHospedeiro.getId());%>"><%
-                out.println(avaliadorHospedeiro.getNome());%></a></td>
+            <td><img src="fotos/<%=avaliadorHospedeiro.getFoto_perfil()%>"></td>
+            <td><a href="perfil?id=<%=avaliadorHospedeiro.getId()%>"><%=avaliadorHospedeiro.getNome()%></a></td>
             <br>
-            <td>Descrição: <%out.println(a.getDescricao());%></td>
+            <td>Descrição: <%=a.getDescricao()%></td>
             <br>
-            <td>Nota: <%out.println(a.getNota());%></td>
+            <td>Nota: <%=a.getNota()%></td>
         </tr>
         <%}%>
         </tbody>
@@ -113,13 +113,12 @@
                 avaliadorHospede = a.getAvaliador();
         %>
         <tr>
-            <td><img src="fotos/<%out.println(avaliadorHospede.getFoto_perfil());%>"></td>
-            <td><a href="perfil?id=<%out.println(avaliadorHospede.getId());%>"><%
-                out.println(avaliadorHospede.getNome());%></a></td>
+            <td><img src="fotos/<%=avaliadorHospede.getFoto_perfil()%>"></td>
+            <td><a href="perfil?id=<%=avaliadorHospede.getId()%>"><%=avaliadorHospede.getNome()%></a></td>
             <br>
-            <td>Descrição: <%out.println(a.getDescricao());%></td>
+            <td>Descrição: <%=a.getDescricao()%></td>
             <br>
-            <td>Nota: <%out.println(a.getNota());%></td>
+            <td>Nota: <%=a.getNota()%></td>
         </tr>
         <%}%>
         </tbody>
@@ -145,13 +144,12 @@
                 avaliadorOrganizador = a.getAvaliador();
         %>
         <tr>
-            <td><img src="fotos/<%out.println(avaliadorOrganizador.getFoto_perfil());%>"></td>
-            <td><a href="perfil?id=<%out.println(avaliadorOrganizador.getId());%>"><%
-                out.println(avaliadorOrganizador.getNome());%></a></td>
+            <td><img src="fotos/<%=avaliadorOrganizador.getFoto_perfil()%>"></td>
+            <td><a href="perfil?id=<%=avaliadorOrganizador.getId()%>"><%=avaliadorOrganizador.getNome()%></a></td>
             <br>
-            <td>Descrição: <%out.println(a.getDescricao());%></td>
+            <td>Descrição: <%=a.getDescricao()%></td>
             <br>
-            <td>Nota: <%out.println(a.getNota());%></td>
+            <td>Nota: <%=a.getNota()%></td>
         </tr>
         <%}%>
         </tbody>
@@ -178,11 +176,10 @@
 
         %>
         <tr>
-            <td><img src="fotos/<%out.println(avaliadorParticipante.getFoto_perfil());%>"></td>
-            <td><a href="perfil?id=<%out.println(avaliadorParticipante.getId());%>"><%
-                out.println(avaliadorParticipante.getNome());%></a></td>
-            <td>Descrição: <%out.println(a.getDescricao());%></td>
-            <td>Nota: <%out.println(a.getNota());%></td>
+            <td><img src="fotos/<%=avaliadorParticipante.getFoto_perfil()%>"></td>
+            <td><a href="perfil?id=<%=avaliadorParticipante.getId()%>"><%=avaliadorParticipante.getNome()%></a></td>
+            <td>Descrição: <%=a.getDescricao()%></td>
+            <td>Nota: <%=a.getNota()%></td>
         </tr>
         <%}%>
         </tbody>
@@ -194,7 +191,8 @@
         <tr>
             <th>Foto</th>
             <th>Nome</th>
-            <th>Requsição</th>
+            <th>Descrição</th>
+            <th>Nota</th>
         </tr>
         </thead>
         <tbody>
@@ -208,16 +206,14 @@
 
         %>
         <tr>
-            <td><img src="fotos/<%out.println(hospede1.getFoto_perfil());%>"></td>
-            <td><a href="perfil?id=<%out.println(hospede1.getId());%>"><%out.println(hospede1.getNome());%></a></td>
-            <td>
-                <form action="avaliarHospedeHospedeiro" method="post">
-                    <input type="hidden" name="hospedagemId" id="hospedagemId" value="<%=a.getId()%>">
-                    <input type="text" name="descricao" id="descricao"/>
-                    <input type="number" name="nota" id="nota"/>
-                    <button type="submit">Enviar</button>
-                </form>
-            </td>
+            <td><img src="fotos/<%=hospede1.getFoto_perfil()%>"></td>
+            <td><a href="perfil?id=<%=hospede1.getId()%>"><%=hospede1.getNome()%></a></td>
+            <form action="avaliarHospedeHospedeiro" method="post">
+                <input type="hidden" name="hospedagemId" id="hospedagemId" value="<%=a.getId()%>">
+                <td><input type="text" name="descricao" id="descricao"/></td>
+                <td><input type="number" name="nota" id="nota"/></td>
+                <button type="submit">Enviar</button>
+            </form>
         </tr>
         <%}%>
         </tbody>
@@ -243,8 +239,8 @@
 
         %>
         <tr>
-            <td><img src="fotos/<%out.println(hospede.getFoto_perfil());%>"></td>
-            <td><a href="perfil?id=<%out.println(hospede.getId());%>"><%out.println(hospede.getNome());%></a></td>
+            <td><img src="fotos/<%=hospede.getFoto_perfil()%>"></td>
+            <td><a href="perfil?id=<%=hospede.getId()%>"><%=hospede.getNome()%></a></td>
             <td>
                 <form action="atualizaReq" method="post">
                     <input type="hidden" name="hospedeReqId" id="hospedeReqId" value="<%=hospede.getId()%>">
@@ -256,8 +252,6 @@
         <%}%>
         </tbody>
     </table>
-
-    <h4>Convocação:</h4>
 
     <h4>Busca por localidade:</h4>
     <form action="buscaHospedagem" method="post">
