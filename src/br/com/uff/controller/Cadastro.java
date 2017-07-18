@@ -39,7 +39,12 @@ public class Cadastro extends HttpServlet{
         Dao dao = new Dao();
         Integer cep = Integer.parseInt(cepInformado);
         System.out.println("Converteu o CEP");
-        boolean hospedeiro = Boolean.getBoolean(hospedeiroInformado);
+        boolean hospedeiro;
+        if (hospedeiroInformado == "false") {
+            hospedeiro = false;
+        }else{
+            hospedeiro = true;
+        }
         System.out.println("Converteu o Boolean");
         Integer qntHospedes;
         if (qntHospedesInformado == ""){
@@ -76,8 +81,8 @@ public class Cadastro extends HttpServlet{
             //Caso contrário, cadastra o usuário
             try {
                 usuario = dao.buscarUsuarioPeloEmail(emailInformado);
-                System.out.println("Encontrou o Usuário");
-                request.setAttribute("mensagemRetorno", "O usuário já foi Cadastrado!");
+                System.out.println("Buscou o Usuário");
+                request.setAttribute("mensagemRetorno", "Usuário já cadastrado. Não é possível cadastrar novamente.");
                 RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
                 dispatcher.forward(request, response);
             }catch (NoResultException e){
@@ -85,14 +90,14 @@ public class Cadastro extends HttpServlet{
                 dao.cadastraUsuario(emailInformado, senhaInformada, nomeInformado, endereco, numeroInformado, complementoInformado,
                         data, "padrao.jpg", esporteInformado, hospedeiro, qntHospedes);
                 System.out.println("Cadastrou o Usuário");
-                request.setAttribute("mensagemRetorno", "Usuário Cadastrado com Sucesso!");
+                request.setAttribute("mensagemRetorno", "Usuário cadastrado com sucesso!");
                 RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
                 dispatcher.forward(request, response);
             }
         }catch (NoResultException e){
             //Informa que não pode cadastrar o endereço do usuário
             request.setAttribute("mensagemRetorno", "Tivemos algum problema com seu cadastro. Entre em contato com o suporte.");
-            RequestDispatcher dispatcher = request.getRequestDispatcher("cadastro.jsp");
+            RequestDispatcher dispatcher = request.getRequestDispatcher("index.jsp");
             dispatcher.forward(request, response);
         }
 

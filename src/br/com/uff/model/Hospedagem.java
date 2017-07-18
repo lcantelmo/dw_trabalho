@@ -21,6 +21,26 @@ public class Hospedagem {
 
     private boolean requisicao;
 
+    private boolean avaliacaoHospedeiroxHospede;
+
+    private boolean avaliacaoHospedexHospedeiro;
+
+    private String mensagem;
+
+    @Temporal(TemporalType.DATE)
+    private Date dataInicial;
+
+    @Temporal(TemporalType.DATE)
+    private Date dataFinal;
+
+    public String getMensagem() {
+        return mensagem;
+    }
+
+    public void setMensagem(String mensagem) {
+        this.mensagem = mensagem;
+    }
+
     public boolean isAvaliacaoHospedeiroxHospede() {
         return avaliacaoHospedeiroxHospede;
     }
@@ -36,16 +56,6 @@ public class Hospedagem {
     public void setAvaliacaoHospedexHospedeiro(boolean avaliacaoHospedexHospedeiro) {
         this.avaliacaoHospedexHospedeiro = avaliacaoHospedexHospedeiro;
     }
-
-    private boolean avaliacaoHospedeiroxHospede;
-
-    private boolean avaliacaoHospedexHospedeiro;
-
-    @Temporal(TemporalType.DATE)
-    private Date dataInicial;
-
-    @Temporal(TemporalType.DATE)
-    private Date dataFinal;
 
     public Integer getQtdViajantes() {
         return qtdViajantes;
@@ -69,11 +79,6 @@ public class Hospedagem {
 
     public void setRequisicao(boolean requisicao) {
         this.requisicao = requisicao;
-    }
-
-
-
-    public Hospedagem() {
     }
 
     public Integer getId() {

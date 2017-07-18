@@ -2,11 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8a8cd2a5-1910-47ad-8127-48c91ef1f59e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/br/com/uff/controller/Home.class" afterPath="$PROJECT_DIR$/bin/br/com/uff/controller/Home.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/br/com/uff/model/Hospedagem.class" afterPath="$PROJECT_DIR$/bin/br/com/uff/model/Hospedagem.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Home.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Home.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/abd6ab69-5bc1-401e-950f-54afe2e4e6bf.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/br/com/uff/service/Dao.class" afterPath="$PROJECT_DIR$/bin/br/com/uff/service/Dao.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Cadastro.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/controller/Cadastro.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/model/Hospedagem.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/model/Hospedagem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/service/Dao.class" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/WEB-INF/classes/br/com/uff/service/Dao.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/cadastro.jsp" afterPath="$PROJECT_DIR$/out/artifacts/WebServlet_war_exploded/cadastro.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" afterPath="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java" afterPath="$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" afterPath="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/cadastro.jsp" afterPath="$PROJECT_DIR$/web/cadastro.jsp" />
     </list>
     <ignored path="financas.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -57,6 +63,42 @@
         <option name="myItemId" value="dw_trabalho" />
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="usuario" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="dw_trabalho" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="hospedagem" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="dw_trabalho" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
     </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
@@ -65,8 +107,124 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dw_trabalho.amizade" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.amizade">
+      <file leaf-file-name="listaHospedes.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/listaHospedes.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="perfilLogado.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/perfilLogado.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="4454">
+              <caret line="262" column="49" lean-forward="false" selection-start-line="262" selection-start-column="49" selection-end-line="262" selection-end-column="49" />
+              <folding>
+                <marker date="1500247493578" expanded="true" signature="8994:9603" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Dao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/uff/service/Dao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1734">
+              <caret line="112" column="53" lean-forward="false" selection-start-line="112" selection-start-column="53" selection-end-line="112" selection-end-column="53" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Hospedagem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="629">
+              <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+                <element signature="e#686#687#0" expanded="false" />
+                <element signature="e#717#718#0" expanded="false" />
+                <element signature="e#765#766#0" expanded="false" />
+                <element signature="e#805#806#0" expanded="false" />
+                <element signature="e#859#860#0" expanded="false" />
+                <element signature="e#909#910#0" expanded="false" />
+                <element signature="e#1128#1129#0" expanded="false" />
+                <element signature="e#1178#1179#0" expanded="false" />
+                <element signature="e#1383#1384#0" expanded="false" />
+                <element signature="e#1418#1419#0" expanded="false" />
+                <element signature="e#1475#1476#0" expanded="false" />
+                <element signature="e#1523#1524#0" expanded="false" />
+                <element signature="e#1566#1567#0" expanded="false" />
+                <element signature="e#1604#1605#0" expanded="false" />
+                <element signature="e#1667#1668#0" expanded="false" />
+                <element signature="e#1721#1722#0" expanded="false" />
+                <element signature="e#1758#1759#0" expanded="false" />
+                <element signature="e#1791#1792#0" expanded="false" />
+                <element signature="e#1844#1845#0" expanded="false" />
+                <element signature="e#1888#1889#0" expanded="false" />
+                <element signature="e#1918#1919#0" expanded="false" />
+                <element signature="e#1943#1944#0" expanded="false" />
+                <element signature="e#1980#1981#0" expanded="false" />
+                <element signature="e#2008#2009#0" expanded="false" />
+                <element signature="e#2046#2047#0" expanded="false" />
+                <element signature="e#2079#2080#0" expanded="false" />
+                <element signature="e#2132#2133#0" expanded="false" />
+                <element signature="e#2176#2177#0" expanded="false" />
+                <element signature="e#2211#2212#0" expanded="false" />
+                <element signature="e#2241#2242#0" expanded="false" />
+                <element signature="e#2288#2289#0" expanded="false" />
+                <element signature="e#2326#2327#0" expanded="false" />
+                <element signature="e#2362#2363#0" expanded="false" />
+                <element signature="e#2396#2397#0" expanded="false" />
+                <element signature="e#2448#2449#0" expanded="false" />
+                <element signature="e#2494#2495#0" expanded="false" />
+                <element signature="e#2528#2529#0" expanded="false" />
+                <element signature="e#2560#2561#0" expanded="false" />
+                <element signature="e#2608#2609#0" expanded="false" />
+                <element signature="e#2650#2651#0" expanded="false" />
+                <element signature="e#2687#2688#0" expanded="false" />
+                <element signature="e#2722#2723#0" expanded="false" />
+                <element signature="e#2776#2777#0" expanded="false" />
+                <element signature="e#2824#2825#0" expanded="false" />
+                <element signature="e#2864#2865#0" expanded="false" />
+                <element signature="e#2902#2903#0" expanded="false" />
+                <element signature="e#2962#2963#0" expanded="false" />
+                <element signature="e#3016#3017#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Cadastro.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1190">
+              <caret line="84" column="115" lean-forward="false" selection-start-line="84" selection-start-column="115" selection-end-line="84" selection-end-column="115" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="listaSolicitacoesHospedagem.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/listaSolicitacoesHospedagem.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="867">
+              <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="dw_trabalho.hospedagem" pinned="false" current-in-tab="true">
+        <entry file="dbDummy://dbtable:/4f88048b/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.hospedagem">
           <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
             <state>
               <filtering enabled="true" />
@@ -80,137 +238,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dw_trabalho.avaliacaoorganizadorxparticipante" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoorganizadorxparticipante">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+      <file leaf-file-name="cadastro.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/cadastro.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1258">
+              <caret line="74" column="56" lean-forward="false" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dw_trabalho.hospedagem" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.hospedagem">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dw_trabalho.usuario" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.usuario">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dw_trabalho.avaliacaohospedexhospedeiro" pinned="false" current-in-tab="true">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedexhospedeiro">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dw_trabalho.avaliacaoparticipantexorganizador" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoparticipantexorganizador">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dw_trabalho.eventoesportivo" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dw_trabalho.eventoesportivo_usuario" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo_usuario">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dw_trabalho.fotos" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.fotos">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="dw_trabalho.endereco" pinned="false" current-in-tab="false">
-        <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.endereco">
-          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-            <state>
-              <filtering enabled="true" />
-            </state>
-          </provider>
-          <provider editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+      <file leaf-file-name="SolicitaHospedagem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/SolicitaHospedagem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="578">
+              <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -221,8 +266,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="CSS File" />
-        <option value="Jsp File" />
         <option value="Class" />
+        <option value="Jsp File" />
       </list>
     </option>
   </component>
@@ -322,10 +367,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/web/alterar-poltrona.jsp" />
-        <option value="$PROJECT_DIR$/src/br/com/uff/servlet/AlterarPoltrona.java" />
-        <option value="$PROJECT_DIR$/web/checkin.jsp" />
-        <option value="$PROJECT_DIR$/src/br/com/uff/model/Voo.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/model/Passageiro.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/servlet/ValidarPagamento.java" />
         <option value="$PROJECT_DIR$/web/telaUsuario.jsp" />
@@ -348,7 +389,6 @@
         <option value="$PROJECT_DIR$/src/br/com/uff/model/SolicitacoesHospedagem.java" />
         <option value="$PROJECT_DIR$/lib/hibernate-jpa-2.1-api-1.0.0.Final.jar!/javax/persistence/Persistence.class" />
         <option value="$PROJECT_DIR$/src/br/com/uff/model/EventoEsportivo.java" />
-        <option value="$PROJECT_DIR$/web/cadastro.jsp" />
         <option value="$PROJECT_DIR$/src/META-INF/persistence.xml" />
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/cadastro.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/listaReqHospede.jsp" />
@@ -357,7 +397,6 @@
         <option value="$PROJECT_DIR$/src/br/com/uff/model/Endereco.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/BuscaPorEsporte.java" />
         <option value="$PROJECT_DIR$/lib/javax.servlet.jar!/javax/servlet/http/HttpServlet.class" />
-        <option value="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" />
         <option value="$PROJECT_DIR$/web/index.jsp" />
         <option value="$PROJECT_DIR$/web/CSS/style.css" />
         <option value="$PROJECT_DIR$/web/perfilAmigo.jsp" />
@@ -366,13 +405,19 @@
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/AtualizarReq.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/util/PopularBanco.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/Home.java" />
-        <option value="$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/AvaliarUsuario.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/AvaliarHospedeiroHospede.java" />
         <option value="$PROJECT_DIR$/web/perfilLogado.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" />
         <option value="$PROJECT_DIR$/src/br/com/uff/controller/AvaliarHospedeHospedeiro.java" />
+        <option value="$PROJECT_DIR$/web/cadastro.jsp" />
+        <option value="$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/listaSolicitacoesHospedagem.jsp" />
+        <option value="$PROJECT_DIR$/web/listaSolicitacoesHospedagem.jsp" />
+        <option value="$PROJECT_DIR$/src/br/com/uff/controller/SolicitaHospedagem.java" />
+        <option value="$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java" />
+        <option value="$PROJECT_DIR$/src/br/com/uff/service/Dao.java" />
+        <option value="$PROJECT_DIR$/lib/hibernate-entitymanager-4.3.5.Final.jar!/org/hibernate/jpa/spi/AbstractEntityManagerImpl.class" />
       </list>
     </option>
   </component>
@@ -435,28 +480,27 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -466,11 +510,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -484,11 +528,29 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="CSS" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dw_trabalho" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -502,11 +564,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -524,11 +586,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -546,11 +608,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -568,11 +630,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dwtrabalho" />
+              <option name="myItemId" value="dw_trabalho" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -590,6 +652,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -606,12 +669,8 @@
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\leo_c\Documents\Faculdade\S.I\8 - Des. Web\Trabalho\dw_trabalho_git\dw_trabalho\web\CSS" />
-      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web" />
-      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web\WEB-INF" />
-      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web\CSS" />
-      <recent name="C:\Users\pedro.lohmann\Documents\projetos\Trabalho-Desenv. Web\trabalho-dw\web\assets\plugins" />
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="br.com.uff.model" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\vitor\Documents\dw\trabalho-dw-20170522T185617Z-001\trabalho-dw\web\fotos" />
@@ -627,8 +686,12 @@
       <recent name="br.com.uff.service" />
       <recent name="br.com.uff" />
     </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="br.com.uff.model" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\leo_c\Documents\Faculdade\S.I\8 - Des. Web\Trabalho\dw_trabalho_git\dw_trabalho\web" />
+      <recent name="C:\Users\leo_c\Documents\Faculdade\S.I\8 - Des. Web\Trabalho\dw_trabalho_git\dw_trabalho\web\fotos" />
+      <recent name="C:\Users\leo_c\Documents\Faculdade\S.I\8 - Des. Web\Trabalho\dw_trabalho_git\dw_trabalho\web\CSS" />
+      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web" />
+      <recent name="C:\Users\vitor\Documents\dw\dwtrabalho\web\WEB-INF" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -1264,6 +1327,9 @@
       <workItem from="1499809536444" duration="1672000" />
       <workItem from="1499811570076" duration="5970000" />
       <workItem from="1499817739757" duration="614000" />
+      <workItem from="1500329597144" duration="4980000" />
+      <workItem from="1500339938127" duration="1492000" />
+      <workItem from="1500405933547" duration="292000" />
     </task>
     <task id="LOCAL-00001" summary="Meu Carrinho OK">
       <created>1481472822955</created>
@@ -1367,7 +1433,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="600560000" />
+    <option name="totallyTimeSpent" value="607350000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1380,7 +1446,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1390,22 +1455,21 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15204236" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14787701" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2497332" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39039665" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32881" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2888889" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26837608" sideWeight="0.76626325" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17777778" sideWeight="0.76475036" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39905363" sideWeight="0.76475036" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32123798" sideWeight="0.5532359" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20121029" sideWeight="0.44676408" order="0" side_tool="false" content_ui="combo" x="951" y="125" width="364" height="434" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20058565" sideWeight="0.44676408" order="0" side_tool="false" content_ui="combo" x="951" y="125" width="364" height="434" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
@@ -1419,6 +1483,7 @@
       <window_info id="Module Dependencies" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2888889" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="14" side_tool="true" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32776618" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
@@ -1483,7 +1548,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="362" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/web/cadastro.jsp</url>
+          <line>131</line>
+          <properties />
+          <option name="timeStamp" value="362" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="363" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1492,54 +1565,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/_project.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Nova_Versão.patch">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trabalho-dw.eml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/trabalho-dw.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/AvaliacaoAmigos.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/AvaliacaoHospedexhospedeiro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-160">
           <caret line="11" column="67" lean-forward="false" selection-start-line="11" selection-start-column="67" selection-end-line="11" selection-end-column="67" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1547,7 +1576,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="14" lean-forward="true" selection-start-line="13" selection-start-column="14" selection-end-line="13" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1567,14 +1595,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/cadastro.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1445">
-          <caret line="85" column="23" lean-forward="false" selection-start-line="85" selection-start-column="23" selection-end-line="85" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -1586,7 +1606,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
           <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1594,7 +1613,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="17" column="65" lean-forward="false" selection-start-line="17" selection-start-column="65" selection-end-line="17" selection-end-column="65" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1602,7 +1620,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1610,7 +1627,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
           <caret line="12" column="46" lean-forward="false" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1625,56 +1641,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#513#514#0" expanded="false" />
-            <element signature="e#538#539#0" expanded="false" />
-            <element signature="e#575#576#0" expanded="false" />
-            <element signature="e#603#604#0" expanded="false" />
-            <element signature="e#645#646#0" expanded="false" />
-            <element signature="e#674#675#0" expanded="false" />
-            <element signature="e#727#728#0" expanded="false" />
-            <element signature="e#763#764#0" expanded="false" />
-            <element signature="e#800#801#0" expanded="false" />
-            <element signature="e#832#833#0" expanded="false" />
-            <element signature="e#883#884#0" expanded="false" />
-            <element signature="e#925#926#0" expanded="false" />
-            <element signature="e#961#962#0" expanded="false" />
-            <element signature="e#992#993#0" expanded="false" />
-            <element signature="e#1041#1042#0" expanded="false" />
-            <element signature="e#1081#1082#0" expanded="false" />
-            <element signature="e#1117#1118#0" expanded="false" />
-            <element signature="e#1149#1150#0" expanded="false" />
-            <element signature="e#1199#1200#0" expanded="false" />
-            <element signature="e#1241#1242#0" expanded="false" />
-            <element signature="e#1273#1274#0" expanded="false" />
-            <element signature="e#1300#1301#0" expanded="false" />
-            <element signature="e#1341#1342#0" expanded="false" />
-            <element signature="e#1373#1374#0" expanded="false" />
-            <element signature="e#1409#1410#0" expanded="false" />
-            <element signature="e#1440#1441#0" expanded="false" />
-            <element signature="e#1489#1490#0" expanded="false" />
-            <element signature="e#1529#1530#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/uff/util/PopularBanco.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-890">
-          <caret line="217" column="14" lean-forward="false" selection-start-line="217" selection-start-column="14" selection-end-line="217" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-93">
-          <caret line="23" column="52" lean-forward="false" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
-          <folding>
-            <element signature="e#499#500#0" expanded="true" />
-            <element signature="e#718#719#0" expanded="true" />
-            <element signature="e#768#769#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="3077">
+          <caret line="187" column="12" lean-forward="false" selection-start-line="187" selection-start-column="12" selection-end-line="195" selection-end-column="12" />
         </state>
       </provider>
     </entry>
@@ -1684,25 +1657,16 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="332">
           <caret line="28" column="28" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/listaHospedes.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="731">
-          <caret line="43" column="17" lean-forward="true" selection-start-line="43" selection-start-column="17" selection-end-line="43" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/perfilLogado.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="213" column="30" lean-forward="true" selection-start-line="213" selection-start-column="30" selection-end-line="213" selection-end-column="54" />
-          <folding />
+        <state relative-caret-position="4454">
+          <caret line="262" column="49" lean-forward="false" selection-start-line="262" selection-start-column="49" selection-end-line="262" selection-end-column="49" />
+          <folding>
+            <marker date="1500247493578" expanded="true" signature="8994:9603" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1718,7 +1682,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="25">
           <caret line="19" column="29" lean-forward="false" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1726,15 +1689,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
           <caret line="31" column="0" lean-forward="false" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/SolicitaHospedagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="15" column="13" lean-forward="false" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1742,7 +1696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="256">
           <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1750,7 +1703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1758,7 +1710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
           <caret line="34" column="12" lean-forward="true" selection-start-line="34" selection-start-column="12" selection-end-line="34" selection-end-column="55" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1766,15 +1717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="131">
           <caret line="48" column="47" lean-forward="false" selection-start-line="48" selection-start-column="47" selection-end-line="48" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="18" column="14" lean-forward="false" selection-start-line="18" selection-start-column="14" selection-end-line="18" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1782,7 +1724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
           <caret line="15" column="115" lean-forward="false" selection-start-line="15" selection-start-column="3" selection-end-line="15" selection-end-column="115" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1790,162 +1731,165 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="179">
           <caret line="25" column="38" lean-forward="false" selection-start-line="24" selection-start-column="8" selection-end-line="25" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedeiroxhospede" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoamigos" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.amizade" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.endereco" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo_usuario" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.fotos" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.hospedagem" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.usuario" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoparticipantexorganizador" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoorganizadorxparticipante" />
+    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedexhospedeiro" />
+    <entry file="file://$PROJECT_DIR$/web/cadastro.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1258">
+          <caret line="74" column="56" lean-forward="false" selection-start-line="74" selection-start-column="56" selection-end-line="74" selection-end-column="56" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/4f88048b/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.usuario">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/fotos/1perfil.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/listaHospedes.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="7" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="51" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/solicitacaoHospedagem.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="96" lean-forward="false" selection-start-line="27" selection-start-column="96" selection-end-line="27" selection-end-column="96" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/SolicitaHospedagem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/listaSolicitacoesHospedagem.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="867">
+          <caret line="51" column="7" lean-forward="false" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/uff/controller/Cadastro.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="84" column="115" lean-forward="false" selection-start-line="84" selection-start-column="115" selection-end-line="84" selection-end-column="115" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/br/com/uff/model/Hospedagem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="629">
+          <caret line="42" column="0" lean-forward="false" selection-start-line="42" selection-start-column="0" selection-end-line="42" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#686#687#0" expanded="false" />
+            <element signature="e#717#718#0" expanded="false" />
+            <element signature="e#765#766#0" expanded="false" />
+            <element signature="e#805#806#0" expanded="false" />
+            <element signature="e#859#860#0" expanded="false" />
+            <element signature="e#909#910#0" expanded="false" />
+            <element signature="e#1128#1129#0" expanded="false" />
+            <element signature="e#1178#1179#0" expanded="false" />
+            <element signature="e#1383#1384#0" expanded="false" />
+            <element signature="e#1418#1419#0" expanded="false" />
+            <element signature="e#1475#1476#0" expanded="false" />
+            <element signature="e#1523#1524#0" expanded="false" />
+            <element signature="e#1566#1567#0" expanded="false" />
+            <element signature="e#1604#1605#0" expanded="false" />
+            <element signature="e#1667#1668#0" expanded="false" />
+            <element signature="e#1721#1722#0" expanded="false" />
+            <element signature="e#1758#1759#0" expanded="false" />
+            <element signature="e#1791#1792#0" expanded="false" />
+            <element signature="e#1844#1845#0" expanded="false" />
+            <element signature="e#1888#1889#0" expanded="false" />
+            <element signature="e#1918#1919#0" expanded="false" />
+            <element signature="e#1943#1944#0" expanded="false" />
+            <element signature="e#1980#1981#0" expanded="false" />
+            <element signature="e#2008#2009#0" expanded="false" />
+            <element signature="e#2046#2047#0" expanded="false" />
+            <element signature="e#2079#2080#0" expanded="false" />
+            <element signature="e#2132#2133#0" expanded="false" />
+            <element signature="e#2176#2177#0" expanded="false" />
+            <element signature="e#2211#2212#0" expanded="false" />
+            <element signature="e#2241#2242#0" expanded="false" />
+            <element signature="e#2288#2289#0" expanded="false" />
+            <element signature="e#2326#2327#0" expanded="false" />
+            <element signature="e#2362#2363#0" expanded="false" />
+            <element signature="e#2396#2397#0" expanded="false" />
+            <element signature="e#2448#2449#0" expanded="false" />
+            <element signature="e#2494#2495#0" expanded="false" />
+            <element signature="e#2528#2529#0" expanded="false" />
+            <element signature="e#2560#2561#0" expanded="false" />
+            <element signature="e#2608#2609#0" expanded="false" />
+            <element signature="e#2650#2651#0" expanded="false" />
+            <element signature="e#2687#2688#0" expanded="false" />
+            <element signature="e#2722#2723#0" expanded="false" />
+            <element signature="e#2776#2777#0" expanded="false" />
+            <element signature="e#2824#2825#0" expanded="false" />
+            <element signature="e#2864#2865#0" expanded="false" />
+            <element signature="e#2902#2903#0" expanded="false" />
+            <element signature="e#2962#2963#0" expanded="false" />
+            <element signature="e#3016#3017#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/hibernate-entitymanager-4.3.5.Final.jar!/org/hibernate/jpa/spi/AbstractEntityManagerImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="420">
+          <caret line="1543" column="0" lean-forward="false" selection-start-line="1543" selection-start-column="0" selection-end-line="1543" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/br/com/uff/service/Dao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2873">
-          <caret line="309" column="60" lean-forward="false" selection-start-line="309" selection-start-column="60" selection-end-line="309" selection-end-column="60" />
-          <folding />
+        <state relative-caret-position="1734">
+          <caret line="112" column="53" lean-forward="false" selection-start-line="112" selection-start-column="53" selection-end-line="112" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedeiroxhospede">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoamigos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.amizade">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.endereco">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.eventoesportivo_usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.fotos">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.hospedagem">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.usuario">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoparticipantexorganizador">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaoorganizadorxparticipante">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://dbtable:/73404238/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.avaliacaohospedexhospedeiro">
+    <entry file="dbDummy://dbtable:/4f88048b/abd6ab69-5bc1-401e-950f-54afe2e4e6bf/dw_trabalho.hospedagem">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state>
           <filtering enabled="true" />

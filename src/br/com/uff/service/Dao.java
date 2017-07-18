@@ -96,17 +96,31 @@ public class Dao {
             transaction.begin();
 
             Hospedagem hospedagem1 = new Hospedagem();
+            System.out.println("Criou o objeto hospedagem");
             hospedagem1.setHospede(hospedeInformado);
+            System.out.println("setou o hóspede");
             hospedagem1.setHospedeiro(hospedeiroInformado);
+            System.out.println("setou o hospedeiro");
             hospedagem1.setPraticamSurf(qtdPraticamSurfInformado);
+            System.out.println("setou a quantidade que praticam surf");
             hospedagem1.setViajantes(qtdViajantesInformado);
-            //hospedagem1.setMensagem(Mensagem);
+            System.out.println("setou a quantidade de viajantes");
+            hospedagem1.setMensagem(Mensagem);
+            System.out.println("setou a mensagem");
             hospedagem1.setDataInicial(dataInicial);
+            System.out.println("setou a data inicial");
             hospedagem1.setDataFinal(dataFinal);
-           // hospedagem1.setAceitar(false);
+            System.out.println("setou a data final");
+            hospedagem1.setRequisicao(false);
+            System.out.println("setou a requisição");
+            hospedagem1.setAvaliacaoHospedeiroxHospede(false);
+            hospedagem1.setAvaliacaoHospedexHospedeiro(false);
             manager.merge(hospedagem1);
+            System.out.println("fez o merge");
             transaction.commit();
+            System.out.println("fez o commit");
         }catch (Exception e) {
+            System.out.println("Deu erro!");
             e.printStackTrace();
             if (manager.isOpen()) {
                 manager.getTransaction().rollback();

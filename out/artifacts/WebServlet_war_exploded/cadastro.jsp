@@ -72,7 +72,7 @@
 
 
     function optionCheck(){
-        var option = document.getElementById("hospede").value;
+        var option = document.getElementById("hospedeiro").value;
         if(option == "false"){
             document.getElementById("option_qnt_hospedes").style.visibility ="hidden";
         }
