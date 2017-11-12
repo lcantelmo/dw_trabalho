@@ -16,7 +16,7 @@ import java.util.List;
 public class Perfil extends HttpServlet{
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        try{
+        /*try{
             Integer idUsuario = Integer.parseInt(req.getParameter("id"));
             Dao dao = new Dao();
             Usuario usuario = dao.buscarUsuarioPeloId(idUsuario);
@@ -48,6 +48,6 @@ public class Perfil extends HttpServlet{
             dispatcher.forward(req, resp);
         }catch (Exception e){
 
-        }
+        }*/
     }
 }

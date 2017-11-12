@@ -2,93 +2,110 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <meta charset="utf-8">
+    <title>Sistema de TCC's - LOGIN</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,800" rel="stylesheet">
+
     <style>
-        body {
+        .alinhar-hev{
+            display: -webkit-flex;
             display: flex;
-            min-height: 100vh;
-            flex-direction: column;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
         }
 
-        main {
-            flex: 1 0 auto;
+        .alinhar-h{
+            display: -webkit-flex;
+            display: flex;
+            -webkit-justify-content: center;
+            justify-content: center;
         }
 
-        body {
-            background: #fff;
+        .alinhar-v{
+            display: -webkit-flex;
+            display: flex;
+            -webkit-align-items: center;
+            align-items: center;
         }
 
-        .input-field input[type=date]:focus + label,
-        .input-field input[type=text]:focus + label,
-        .input-field input[type=email]:focus + label,
-        .input-field input[type=password]:focus + label {
-            color: #e91e63;
+        .aplicar-fonte{
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 800;
         }
 
-        .input-field input[type=date]:focus,
-        .input-field input[type=text]:focus,
-        .input-field input[type=email]:focus,
-        .input-field input[type=password]:focus {
-            border-bottom: 2px solid #e91e63;
-            box-shadow: none;
+        a:link, a:visited {
+            text-decoration: none;
+            color: #fff;
         }
+        a:hover {
+            text-decoration: underline;
+            color: #fff;
+        }
+        a:active {
+            text-decoration: none;
+        }
+
+        #botaoSaibaMais{
+            background: #38547B;
+            padding-right: 11px;
+            padding-left: 13px;
+            padding-top: 5px;
+            padding-bottom: 4px !important;
+            -moz-border-radius:17px;
+            -webkit-border-radius:17px;
+            border-radius:17px;
+            text-decoration:none !important;
+        }
+
+        #botaoSaibaMais:hover{
+            background:#446695;
+        }
+
     </style>
+
 </head>
+<body bgcolor="#7599B3">
 
-<body>
-<div class="section"></div>
-<main>
-    <center>
-        <div class="section"></div>
-        <h5 class="indigo-text">Faça login no sistema</h5>
-        <div class="section"></div>
-        <div class="container">
-            <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
-
-                <form action="login" class="col s12" method="post">
-                    <div class='row'>
-                        <div class='col s12'>
-                        </div>
-                    </div>
-
-                    <div class='row'>
-                        <div class='input-field col s12'>
-                            <input class='validate' type='email' name='email' id='email' />
-                            <label for='email'>E-mail</label>
-                        </div>
-                    </div>
-
-                    <div class='row'>
-                        <div class='input-field col s12'>
-                            <input class='validate' type='password' name="senha" id='password' />
-                            <label for='password'>Senha</label>
-                        </div>
-                    </div>
-
-                    <br />
-                    <center>
-                        <div class='row'>
-                            <button type='submit' name='btn_login' class='col s12 btn btn-large waves-effect indigo'>Login</button>
-                        </div>
-                        <p style="font-family: 'Arial Black'; font-size: 15px">${mensagemRetorno}</p>
-                    </center>
-                </form>
-                <form action="index.jsp">
-                    <div align="center">
-                        <button class="btn waves-effect waves-light red" type="submit"> Voltar <i class="material-icons right">call_missed</i></button>
-                    </div>
-                </form>
-            </div>
+<div class="alinhar-hev" style="width: 100%; height: 100%;">
+    <div class="bloco-de-login" style="width: 300px;" >
+        <div style="width: 100%; height: 70px; background-color: #38547B; color: #fff; font-size: 19px;"
+             class="aplicar-fonte alinhar-hev">
+            Sistema de TCC's
         </div>
-    </center>
+        <div style="width: 100%; background-color: #FEFEFE; padding-top: 60px; padding-bottom: 70px;" class="aplicar-fonte" align="center">
 
-    <div class="section"></div>
-    <div class="section"></div>
-</main>
+            <div width="80%">
+                Matrícula:
+                <input style="margin-left: 5px;" type="text" name="login" id="login" size="15" aria-required="true" aria-invalid="false" />
+            </div>
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+            <br>
+
+            <div width="80%">
+                Senha:
+                <input style="margin-left: 34px;" type="password" name="senha" id="senha" size="15" aria-required="true" aria-invalid="false" />
+            </div>
+
+        </div>
+        <div style="width: 100%; height: 50px; color: #fff; background-color: #FEFEFE;
+			margin-top: -25px; padding-bottom: 15px;"
+             class="aplicar-fonte alinhar-hev">
+            <a id="botaoSaibaMais" style="width: 120px;" align="center" href="#">Login</a>
+        </div>
+        <div style="width: 100%; height: 55px; background-color: #FEFEFE; color: #000;
+			font-weight: 400 !important; font-size: 12px; padding-top: 10px;"
+             class="aplicar-fonte" align="right">
+
+            <div style="padding-bottom: 5px;">
+                <a href="cadastro.jsp" style="color: #A5A9C9 !important;  padding-right: 10px;">Novo usuário</a>
+            </div>
+            <a href="#" style="color: #A5A9C9 !important;  padding-right: 10px;">Esqueci minha senha</a>
+        </div>
+    </div>
+</div>
+
 </body>
-
 </html>

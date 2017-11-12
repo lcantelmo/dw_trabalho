@@ -1,142 +1,134 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
-<head>
-    <link rel="stylesheet" type="text/css" href="CSS/style.css">
-    <title>Cadastro</title>
-</head>
+<meta charset="utf-8">
+<title>Sistema TCC's - CADASTRE-SE</title>
+
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+
+<style>
+    .alinhar-hev{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .alinhar-h{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-justify-content: center;
+        justify-content: center;
+    }
+
+    .alinhar-v{
+        display: -webkit-flex;
+        display: flex;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+
+    .aplicar-fonte{
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 800;
+    }
+
+    a:link, a:visited {
+        text-decoration: none;
+        color: #fff;
+    }
+    a:hover {
+        text-decoration: underline;
+        color: #fff;
+    }
+    a:active {
+        text-decoration: none;
+    }
+
+    ::-webkit-input-placeholder { /* WebKit browsers */
+        color: #BFBFBF;
+    }
+
+    .img-transparencia-001:hover{
+        opacity: 0.80;
+        -webkit-transition: 0.25s ease-out;
+        -moz-transition: 0.25s ease-out;
+        -o-transition: 0.25s ease-out;
+        transition: 0.25s ease-out;
+    }
+
+</style>
 <script>
-    function limpa_formulário_cep() {
-        //Limpa valores do formulário de cep.
-        document.getElementById('rua').value=("");
-        document.getElementById('bairro').value=("");
-        document.getElementById('cidade').value=("");
-        document.getElementById('uf').value=("");
-    }
+    var password = document.getElementById("senha")
+        , confirm_password = document.getElementById("confirm_senha");
 
-    function meu_callback(conteudo) {
-        if (!("erro" in conteudo)) {
-            //Atualiza os campos com os valores.
-            document.getElementById('rua').value=(conteudo.logradouro);
-            document.getElementById('bairro').value=(conteudo.bairro);
-            document.getElementById('cidade').value=(conteudo.localidade);
-            document.getElementById('uf').value=(conteudo.uf);
-        } //end if.
-        else {
-            //CEP não Encontrado.
-            limpa_formulário_cep();
-            alert("CEP não encontrado.");
+    function validatePassword(){
+        if(password.value != confirm_password.value) {
+            confirm_password.setCustomValidity("Senhas diferentes!");
+        } else {
+            confirm_password.setCustomValidity('');
         }
     }
 
-    function pesquisacep(valor) {
-
-        //Nova variável "cep" somente com dígitos.
-        var cep = valor.replace(/\D/g, '');
-
-        //Verifica se campo cep possui valor informado.
-        if (cep != "") {
-
-            //Expressão regular para validar o CEP.
-            var validacep = /^[0-9]{8}$/;
-
-            //Valida o formato do CEP.
-            if(validacep.test(cep)) {
-
-                //Preenche os campos com "..." enquanto consulta webservice.
-                document.getElementById('rua').value="...";
-                document.getElementById('bairro').value="...";
-                document.getElementById('cidade').value="...";
-                document.getElementById('uf').value="...";
-
-                //Cria um elemento javascript.
-                var script = document.createElement('script');
-
-                //Sincroniza com o callback.
-                script.src = '//viacep.com.br/ws/'+ cep + '/json/?callback=meu_callback';
-
-                //Insere script no documento e carrega o conteúdo.
-                document.body.appendChild(script);
-
-            } //end if.
-            else {
-                //cep é inválido.
-                limpa_formulário_cep();
-                alert("Formato de CEP inválido.");
-            }
-        } //end if.
-        else {
-            //cep sem valor, limpa formulário.
-            limpa_formulário_cep();
-        }
-    };
-
-
-
-    function optionCheck(){
-        var option = document.getElementById("hospedeiro").value;
-        if(option == "false"){
-            document.getElementById("option_qnt_hospedes").style.visibility ="hidden";
-        }
-        if(option == "true"){
-            document.getElementById("option_qnt_hospedes").style.visibility ="visible";
-        }
-    }
+    password.onchange = validatePassword;
+    confirm_password.onkeyup = validatePassword;
 </script>
-<body>
-<div id="mystyle">
-    <h2>Cadastro</h2>
-    <form action="cadastro" method="post">
-        <label for="email">E-mail:</label>
-        <input type="email" name="email" required id="email" />
-        <br>
-        <label for="password">Senha:</label>
-        <input type="password"  name="password" required id="password">
-        <br>
-        <label for="nome">Nome:</label>
-        <input type="text" name="nome" required id="nome">
-        <br>
-        <label for="cep">CEP:</label>
-        <input name="cep" required id="cep" maxlength="9" onblur="pesquisacep(this.value);">
-        <br>
-        <label for="pais">País:</label>
-        <input type="text" name="pais" required id="pais" maxlength="2">
-        <br>
-        <label for="uf">Estado:</label>
-        <input type="text" name="uf" required id="uf">
-        <br>
-        <label for="rua">Rua:</label>
-        <input type="text" name="rua" required id="rua">
-        <br>
-        <label for="numero">Nº:</label>
-        <input type="number" name="numero" required id="numero">
-        <br>
-        <label for="Complemento">Complemento:</label>
-        <input type="text" name="complemento" id="complemento">
-        <br>
-        <label for="bairro">Bairro:</label>
-        <input type="text" name="bairro" required id="bairro">
-        <br>
-        <label for="cidade">Cidade:</label>
-        <input type="text" name="cidade" required id="cidade">
-        <br>
-        <label for="data_nasc">Data de Nascimento:</label>
-        <input type="date" name="data_nasc" required id="data_nasc">
-        <br>
-        <label for="esporte">Esporte Favorito:</label>
-        <input type="text" name="esporte" required id="esporte">
-        <br>
-        <label for="hospedeiro">Deseja receber Hóspedes?</label>
-        <select name="hospedeiro" required id="hospedeiro" onchange="optionCheck()">
-            <option value="false">Não</option>
-            <option value="true">Sim</option>
-        </select>
-    <br>
-        <div id="option_qnt_hospedes" style="visibility:hidden">
-            <label for="qnt_hospedes">Quantos Hóspedes você pode receber na sua casa:</label>
-            <input type="number" name="qnt_hospedes" id="qnt_hospedes">
-            <br>
+</head>
+<body bgcolor="#E9EBEE">
+
+<!-- ---------- Menu - Início ---------- -->
+<div style="width: 100%; background-color: #38547B; top: 0%; left: 0%; position: absolute; color: #fff; padding-top: 15px; padding-bottom: 15px;"
+     class="aplicar-fonte">
+
+		<span style="font-size: 19px; padding-left: 30px;">
+			<a href="#">
+				Sistema de TCC's
+			</a>
+		</span>
+
+
+</div>
+<!-- ---------- Menu - Fim ---------- -->
+
+<div style="color: #fff; margin-top: 100px; padding-left: 0px;"
+     class="aplicar-fonte" align="center">
+
+    <div class="aplicar-fonte" style="background-color: #38547B; width: 600px; padding-top: 10px; padding-bottom: 10px; padding-left: 30px; margin-top: -5px;" align="left">
+        + Aluno
+    </div>
+
+    <form action="cadastro" method="post" class="aplicar-fonte" style="background-color: #fff; width: 400px; color: #000;
+		padding-left: 100px; padding-top: 40px;" align="left">
+        <div style="padding-bottom: 20px;">
+            Nome:
+            <input style="margin-left: 20px;" type="text" name="nome" id="nome" size="28" aria-required="true" aria-invalid="false" />
         </div>
-        <input type="submit" value="Cadastrar">
+
+        <div style="padding-bottom: 20px;">
+            Matrícula:
+            <input style="margin-left: 24px;" type="text" name="matricula" id="matricula" size="23" aria-required="true" aria-invalid="false" />
+        </div>
+
+        <div style="padding-bottom: 20px;">
+            CPF:
+            <input style="margin-left: 19px;" type="text" name="cpf" id="cpf" size="31" aria-required="true" aria-invalid="false" />
+        </div>
+
+        <div style="padding-bottom: 20px;">
+            Senha:
+            <input style="margin-left: 25px;" type="password" name="senha" id="senha" size="27" aria-required="true" aria-invalid="false" />
+        </div>
+
+        <div style="padding-bottom: 40px;">
+            Confirmar Senha:
+            <input style="margin-left: 20px;" type="password" name="confirm_senha" id="confirm_senha" size="15" aria-required="true" aria-invalid="false" />
+        </div>
+
+        <div align="right" style="padding-right: 90px; padding-bottom: 25px; padding-top: 20px;">
+            <input type="submit" style="color: #000;" value="CRIAR">
+        </div>
+
     </form>
 </div>
 </body>

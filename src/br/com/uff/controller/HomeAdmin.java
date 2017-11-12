@@ -13,13 +13,13 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.util.List;
 
-public class Home extends HttpServlet {
+public class HomeAdmin extends HttpServlet {
     @Override
     /*Essa controller vai ser carregada assim que o sistema iniciar, para criar o atributo "carrinho" na session
     Esse carrinho ser� um ArrayList, para que um usu�rio possa comprar mais de uma passagem. */
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        try {
+        /*try {
             HttpSession session = req.getSession();
             Usuario usuario = (Usuario)session.getAttribute("usuarioLogado");
             Dao dao = new Dao();
@@ -59,6 +59,6 @@ public class Home extends HttpServlet {
                 req.setAttribute("mensagemRetorno", "Usuario nao encontrado. Digite novamente.");
                 RequestDispatcher dispatcher = req.getRequestDispatcher("login.jsp");
                 dispatcher.forward(req, resp);
-            }
+            }*/
     }
 }

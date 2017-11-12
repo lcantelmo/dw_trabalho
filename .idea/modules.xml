@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/trabalho-dw.iml" filepath="$PROJECT_DIR$/trabalho-dw.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dac_trabalho.iml" filepath="$PROJECT_DIR$/dac_trabalho.iml" />
     </modules>
   </component>
 </project>

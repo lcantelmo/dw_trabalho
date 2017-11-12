@@ -1,5 +1,8 @@
 package br.com.uff.controller;
 
+import br.com.uff.model.Administrador;
+import br.com.uff.model.Aluno;
+import br.com.uff.model.Professor;
 import br.com.uff.model.Usuario;
 import br.com.uff.service.Dao;
 
@@ -20,7 +23,7 @@ public class Login extends HttpServlet{
         //Sempre que carregarmos a classe, vamos capturar a sessão do usuário, para verificar se o campo "usuario.logado" da Session está preenchido.
 
         //Captura de parâmetros e acesso ao banco, com a query.
-        String emailInformado = request.getParameter("email");
+        String matriculaInformada = request.getParameter("login");
         String senhaInformada = request.getParameter("senha");
         try {
             //EntityManager manager = new JPAUtil().getEntityManager();
@@ -30,13 +33,23 @@ public class Login extends HttpServlet{
 
             //Usuario usuarioEncontrado = (Usuario) consulta.getSingleResult();
             Dao dao = new Dao();
-            Usuario usuarioEncontrado = dao.buscarUsuarioPeloEmailESenha(emailInformado, senhaInformada);
+            Usuario usuarioEncontrado = dao.buscarUsuarioPelaMatriculaESenha(matriculaInformada, senhaInformada);
             //Já que encontramos o usuário, vamos iniciar a Session
             HttpSession session = request.getSession();
             session.setAttribute("usuarioLogado", usuarioEncontrado);
 
-            RequestDispatcher dispatcher = request.getRequestDispatcher("/home");
-            dispatcher.forward(request, response);
+            if(usuarioEncontrado instanceof Administrador){
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/homeAdmin");
+                dispatcher.forward(request, response);
+            }
+            if(usuarioEncontrado instanceof Aluno){
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/homeAluno");
+                dispatcher.forward(request, response);
+            }
+            if(usuarioEncontrado instanceof Professor){
+                RequestDispatcher dispatcher = request.getRequestDispatcher("/homeProfessor");
+                dispatcher.forward(request, response);
+            }
 
         } catch (NoResultException e){
             //Informa que não encontrou o usuario. Retornamos para a tela de login.
